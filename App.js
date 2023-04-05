@@ -2,13 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import DashboardScreen from './src/screen/DashboardScreen';
 import ProfileTopBar from './components/ProfileTopBar';
+import UserProfileScreen from './src/screen/UserProfileScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       {/* <DashboardScreen /> */}
-      <ProfileTopBar tittle='istiak mahmud' linkTittle='link here' />
+      <UserProfileScreen />
     </View>
   );
 }
