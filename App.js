@@ -1,10 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import DashboardScreen from './src/screen/DashboardScreen';
-import ProfileTopBar from './components/ProfileTopBar';
-import UserProfileScreen from './src/screen/UserProfileScreen';
-import EditProfileScreen from './src/screen/EditProfileScreen';
-import SignUpScreen from './src/screen/SignUpScreen';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import DashboardScreen from "./src/screen/DashboardScreen";
+import ProfileTopBar from "./components/ProfileTopBar";
+import UserProfileScreen from "./src/screen/UserProfileScreen";
+import EditProfileScreen from "./src/screen/EditProfileScreen";
+import SignUpScreen from "./src/screen/SignUpScreen";
+import LoginScreen from "./src/screen/LoginScreen";
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
       {/* <DashboardScreen /> */}
       {/* <UserProfileScreen /> */}
       {/* <EditProfileScreen /> */}
-      <SignUpScreen />
+      {/* <SignUpScreen /> */}
+      <LoginScreen />
     </View>
   );
 }
@@ -21,7 +23,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     // alignItems: 'center',
     // justifyContent: 'center',
     // padding: 10,
