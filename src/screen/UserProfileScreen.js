@@ -10,7 +10,7 @@ const UserProfileScreen = () => {
       <View>
         <ProfileTopBar 
         tittle="test name" 
-        linkTittle="link here" 
+        linkTittle="Edit Profile" 
         />
       </View>
 

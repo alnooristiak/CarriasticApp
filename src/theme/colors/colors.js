@@ -9,6 +9,7 @@ export const Colors = {
   darkBlue: '#341f97',
   white: '#FFFFFF',
   black: '#000000',
+  border_color: '#674778',
 };
 
 export const BtnColler = {

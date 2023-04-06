@@ -3,13 +3,15 @@ import { StyleSheet, Text, View } from 'react-native';
 import DashboardScreen from './src/screen/DashboardScreen';
 import ProfileTopBar from './components/ProfileTopBar';
 import UserProfileScreen from './src/screen/UserProfileScreen';
+import EditProfileScreen from './src/screen/EditProfileScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
       {/* <DashboardScreen /> */}
-      <UserProfileScreen />
+      {/* <UserProfileScreen /> */}
+      <EditProfileScreen />
     </View>
   );
 }

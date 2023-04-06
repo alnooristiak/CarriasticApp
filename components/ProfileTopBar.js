@@ -81,10 +81,10 @@ const styles = StyleSheet.create({
   linkTextStyle: {
     position: "relative",
     bottom: -140,
-    right: -280,
+    right: -275,
     color: Colors.black,
     fontWeight: 400,
-    fontSize: 18,
+    fontSize: 13,
     textDecorationLine: "underline",
   },
   linkIcon: {
