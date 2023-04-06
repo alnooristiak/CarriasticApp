@@ -7,12 +7,22 @@ import HomeIconButton from "../../components/buttons/HomeIconButton";
 const UserProfileScreen = () => {
   return (
     <View>
-      <ProfileTopBar tittle="istiak mahmud" linkTittle="link here" />
+      <View>
+        <ProfileTopBar 
+        tittle="test name" 
+        linkTittle="link here" 
+        />
+      </View>
 
-      <UserDetail />
+      <View>
+        <UserDetail />
+      </View>
 
-      <View styles={styles.homeButton}>
-        <HomeIconButton img={require("../../assets/icons/homeIcon.png")} />
+      <View style={styles.homeButton}>
+        <HomeIconButton
+          style={styles.homeIconImage}
+          img={require("../../assets/icons/homeIcon.png")}
+        />
       </View>
     </View>
   );
@@ -24,5 +34,8 @@ const styles = StyleSheet.create({
   homeButton: {
     width: 50,
     height: 50,
+    marginTop: 90,
+    justifyContent: 'center',
+    alignSelf: 'center'
   },
 });

@@ -4,18 +4,18 @@ import { AntDesign } from "@expo/vector-icons";
 import { Colors } from "../src/theme/colors/colors";
 import { Feather } from "@expo/vector-icons";
 
-const ProfileTopBar = ({ tittle, linkTittle, onPress }) => {
+const ProfileTopBar = ({ onPress, tittle, linkTittle }) => {
   return (
     <View style={[styles.container, styles.shadowProp]}>
       <View style={styles.iconTittle}>
-        <View>
+        <TouchableOpacity onPress={onPress}>
           <AntDesign
             style={styles.iconStyle}
             name="arrowleft"
             size={30}
             color="white"
           />
-        </View>
+        </TouchableOpacity>
         <View>
           <Text style={styles.tittleText}>{tittle}</Text>
         </View>
@@ -67,10 +67,12 @@ const styles = StyleSheet.create({
   },
   imageStyle: {
     position: "absolute",
-    bottom: -190,
+    bottom: -180,
     justifyContent: "center",
     zIndex: 1,
     alignSelf: "center",
+    width: 165,
+    height: 165
   },
   userImageContainer: {},
   editLink: {
