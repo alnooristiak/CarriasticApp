@@ -4,6 +4,7 @@ import DashboardScreen from './src/screen/DashboardScreen';
 import ProfileTopBar from './components/ProfileTopBar';
 import UserProfileScreen from './src/screen/UserProfileScreen';
 import EditProfileScreen from './src/screen/EditProfileScreen';
+import SignUpScreen from './src/screen/SignUpScreen';
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
       <StatusBar style="auto" />
       {/* <DashboardScreen /> */}
       {/* <UserProfileScreen /> */}
-      <EditProfileScreen />
+      {/* <EditProfileScreen /> */}
+      <SignUpScreen />
     </View>
   );
 }
