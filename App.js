@@ -8,6 +8,8 @@ import SignUpScreen from "./src/screen/SignUpScreen";
 import LoginScreen from "./src/screen/LoginScreen";
 import LeaveApplicationScreen from "./src/screen/LeaveApplicationScreen";
 import LeaveApplicationSentSceen from "./src/screen/LeaveApplicationSentSceen";
+import LeavApplicationVPdfScreen from "./src/screen/LeavApplicationVPdfScreen";
+import AttendenceScreen from "./src/screen/AttendenceScreen";
 
 export default function App() {
   return (
@@ -19,7 +21,9 @@ export default function App() {
       {/* <SignUpScreen /> */}
       {/* <LoginScreen /> */}
       {/* <LeaveApplicationScreen /> */}
-      <LeaveApplicationSentSceen />
+      {/* <LeaveApplicationSentSceen /> */}
+      {/* <LeavApplicationVPdfScreen /> */}
+      <AttendenceScreen />
     </View>
   );
 }
