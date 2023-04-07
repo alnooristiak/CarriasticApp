@@ -6,16 +6,16 @@ import CommonButton from "../../components/buttons/CommonButton";
 import { Colors } from "../theme/colors/colors";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 
-const LeaveApplicationSentSceen = () => {
+const RequisitionApiConfigScreen = () => {
   return (
     <View style={styles.container}>
-      <HeaderSection tittle="Leave Application" />
+      <HeaderSection tittle="Requisition" />
 
       <View style={styles.textContainer}>
         <View style={styles.textsContainer}>
           <PopupText
             tittle="Your Requisition has"
-            secondTittle="sent to HR"
+            secondTittle="sent to Admin"
           />
         </View>
       </View>
@@ -33,7 +33,7 @@ const LeaveApplicationSentSceen = () => {
   );
 };
 
-export default LeaveApplicationSentSceen;
+export default RequisitionApiConfigScreen;
 
 const styles = StyleSheet.create({
   textContainer: {

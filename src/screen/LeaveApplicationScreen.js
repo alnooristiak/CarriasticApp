@@ -37,8 +37,8 @@ const LeaveApplicationScreen = () => {
 
         <InputDateButton tittle="Enter Your Password" />
 
-        <View style={{marginTop: 30}}>
-            <CommonButton tittle='SUBMIT' />
+        <View style={{ marginTop: 30 }}>
+          <CommonButton tittle="SUBMIT" />
         </View>
       </View>
     </View>
@@ -59,6 +59,6 @@ const styles = StyleSheet.create({
     borderBottomColor: Colors.black,
     borderRadius: 10,
     padding: 10,
-    marginBottom: 18
+    marginBottom: 18,
   },
 });
