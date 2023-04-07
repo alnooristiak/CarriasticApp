@@ -15,13 +15,17 @@ export default CommonButton
 const styles = StyleSheet.create({
     container: {
         backgroundColor: Colors.black,
-        borderRadius: 5
+        borderRadius: 5,
+        width: 160,
+        justifyContent: 'center',
+        alignSelf: 'center'
     },
     buttonText: {
         color: Colors.white,
         fontSize: 15,
         fontWeight: 700,
         paddingHorizontal: 30,
-        paddingVertical: 3
+        paddingVertical: 3,
+        textAlign: 'center'
     }
 })

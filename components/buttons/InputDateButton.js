@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     borderBottomColor: Colors.black,
     borderRadius: 10,
     overflow: "hidden",
-    marginBottom: 18,
+    marginBottom: 34,
     padding: 10,
   },
   textSec: {

@@ -7,6 +7,7 @@ import EditProfileScreen from "./src/screen/EditProfileScreen";
 import SignUpScreen from "./src/screen/SignUpScreen";
 import LoginScreen from "./src/screen/LoginScreen";
 import LeaveApplicationScreen from "./src/screen/LeaveApplicationScreen";
+import LeaveApplicationSentSceen from "./src/screen/LeaveApplicationSentSceen";
 
 export default function App() {
   return (
@@ -17,7 +18,8 @@ export default function App() {
       {/* <EditProfileScreen /> */}
       {/* <SignUpScreen /> */}
       {/* <LoginScreen /> */}
-      <LeaveApplicationScreen />
+      {/* <LeaveApplicationScreen /> */}
+      <LeaveApplicationSentSceen />
     </View>
   );
 }
