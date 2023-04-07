@@ -3,7 +3,9 @@ import React from "react";
 import InputWithIconSec from "../../components/inputs/InputWithIconSec";
 import LogoImage from "../../components/particles/LogoImage";
 import { Colors } from "../theme/colors/colors";
-import CheckBox from '@react-native-community/checkbox';
+import ParagrapWithLink from "../../components/particles/ParagrapWithLink";
+import InfoIconLink from "../../components/buttons/InfoIconLink";
+// import CheckBox from '@react-native-community/checkbox';
 
 const LoginScreen = () => {
   return (
@@ -34,13 +36,13 @@ const LoginScreen = () => {
               />
             </View>
 
-            <View>
+            <View style={styles.checkboxSection}>
               <View>
-              <CheckBox
-          disabled={false}
-          style={styles.checkbox}
-        />
-                <Text>Remember Me</Text>
+                {/* <CheckBox 
+                disabled={false} 
+                style={styles.checkbox} 
+                /> */}
+                <Text style={styles.checBText}>Remember Me</Text>
               </View>
             </View>
             <View>
@@ -54,6 +56,14 @@ const LoginScreen = () => {
           </View>
         </View>
       </View>
+
+      <View>
+        <ParagrapWithLink linkText='SIGNUP' simpleText='Need an account?       ' />
+      </View>
+
+      <View style={styles.infoLink}>
+        <InfoIconLink img={require("../../assets/icons/info_i.png")} />
+      </View>
     </View>
   );
 };
@@ -61,9 +71,13 @@ const LoginScreen = () => {
 export default LoginScreen;
 
 const styles = StyleSheet.create({
+  conatiner: {
+    backgroundColor: Colors.purple_light,
+    height: '100%'
+  },
   losogSection: {
     marginTop: 40,
-    marginBottom: 60,
+    marginBottom: 30,
   },
 
   userInputSec: {
@@ -99,30 +113,46 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.purple_dark,
     padding: 8,
     width: "50%",
-    justifyContent: 'center',
-    alignSelf: 'center',
-    marginTop: 20
+    justifyContent: "center",
+    alignSelf: "center",
+    marginTop: 20,
+  },
+  checkboxSection: {
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    paddingLeft: 52
+  },
+  checBText: {
+    fontSize: 16,
+    fontWeight: 400
   },
   signUpBtnText: {
     color: Colors.white,
     fontSize: 16,
     fontWeight: 700,
-    textAlign: 'center'
+    textAlign: "center",
   },
   forgotText: {
     textAlign: "right",
     marginVertical: 17,
-    fontSize: 17,
+    fontSize: 14,
+    fontWeight: 400,
+    marginRight: 52
   },
   line: {
     border: 1,
     borderWidth: 0.5,
     borderColor: "black",
+    width: '80%',
+    alignSelf: 'center'
   },
   orText: {
     textAlign: "center",
     marginVertical: 10,
-    fontWeight: "bold",
-    fontSize: 16,
+    fontWeight: 400,
+    fontSize: 14,
   },
+  infoLink: {
+    bottom: -50
+  }
 });
