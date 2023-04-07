@@ -10,6 +10,7 @@ import LeaveApplicationScreen from "./src/screen/LeaveApplicationScreen";
 import LeaveApplicationSentSceen from "./src/screen/LeaveApplicationSentSceen";
 import LeavApplicationVPdfScreen from "./src/screen/LeavApplicationVPdfScreen";
 import AttendenceScreen from "./src/screen/AttendenceScreen";
+import RequisitionPdfScreen from "./src/screen/RequisitionPdfScreen";
 
 export default function App() {
   return (
@@ -23,7 +24,11 @@ export default function App() {
       {/* <LeaveApplicationScreen /> */}
       {/* <LeaveApplicationSentSceen /> */}
       {/* <LeavApplicationVPdfScreen /> */}
-      <AttendenceScreen />
+      {/* <AttendenceScreen /> */}
+
+      {/* === Requisition === */}
+
+      <RequisitionPdfScreen />
     </View>
   );
 }
