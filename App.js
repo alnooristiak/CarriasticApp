@@ -16,6 +16,7 @@ import RequisitionApiConfigScreen from "./src/screen/RequisitionApiConfigScreen"
 import TaDaBillInputScreen from "./src/screen/TaDaBillInputScreen";
 import TaDaBillPdfViewScreen from "./src/screen/TaDaBillPdfViewScreen";
 import TaDaBillConfigScreen from "./src/screen/TaDaBillConfigScreen";
+import NotificationScreen from "./src/screen/NotificationScreen";
 
 export default function App() {
   return (
@@ -41,7 +42,10 @@ export default function App() {
       {/* === TA DA Bill === */}
       {/* <TaDaBillInputScreen /> */}
       {/* <TaDaBillPdfViewScreen /> */}
-      <TaDaBillConfigScreen />
+      {/* <TaDaBillConfigScreen /> */}
+
+      {/* === Notification === */}
+      <NotificationScreen />
     </View>
   );
 }
