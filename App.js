@@ -13,6 +13,7 @@ import AttendenceScreen from "./src/screen/AttendenceScreen";
 import RequisitionPdfScreen from "./src/screen/RequisitionPdfScreen";
 import RequisitionInputScreen from "./src/screen/RequisitionInputScreen";
 import RequisitionApiConfigScreen from "./src/screen/RequisitionApiConfigScreen";
+import TaDaBillInputScreen from "./src/screen/TaDaBillInputScreen";
 
 export default function App() {
   return (
@@ -33,7 +34,10 @@ export default function App() {
       {/* === Requisition === */}
       {/* <RequisitionPdfScreen /> */}
       {/* <RequisitionInputScreen /> */}
-      <RequisitionApiConfigScreen />
+      {/* <RequisitionApiConfigScreen /> */}
+
+      {/* === TA DA Bill === */}
+      <TaDaBillInputScreen />
     </View>
   );
 }

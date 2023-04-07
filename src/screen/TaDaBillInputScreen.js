@@ -6,27 +6,29 @@ import { Colors } from "../theme/colors/colors";
 import CommonButton from "../../components/buttons/CommonButton";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 
-const RequisitionInputScreen = () => {
+const TaDaBillInputScreen = () => {
   return (
     <View style={styles.container}>
-      <HeaderSection tittle="Requisition" />
+      <HeaderSection tittle="TA DA Bill" />
       <View style={styles.fromContainer}>
-        <InputDateButton tittle="Name of the item" />
+        <InputDateButton tittle="Purpose" />
 
         <InputDateButton
           tittle="Date"
           img={require("../../assets/icons/calender_i.png")}
         />
 
-        <InputDateButton tittle="Details" />
+        <InputDateButton tittle="From" />
 
-        <InputDateButton tittle="Quantity" />
+        <InputDateButton tittle="To" />
+
+        <InputDateButton tittle="Amount" />
 
         <View style={{ marginTop: 30 }}>
           <CommonButton tittle="SUBMIT" />
         </View>
 
-        <View style={{ marginVertical: "30%" }}>
+        <View style={{ marginVertical: "10%" }}>
           <HomeIconButton
             img={require("../../assets/icons/small_homeIcon.png")}
           />
@@ -36,11 +38,11 @@ const RequisitionInputScreen = () => {
   );
 };
 
-export default RequisitionInputScreen;
+export default TaDaBillInputScreen;
 
 const styles = StyleSheet.create({
   fromContainer: {
-    marginTop: 60,
+    marginTop: 50,
     justifyContent: "center",
     alignItems: "center",
   },
