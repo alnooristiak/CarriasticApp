@@ -3,12 +3,13 @@ import React from "react";
 import { Feather } from "@expo/vector-icons";
 import { Colors } from "../src/theme/colors/colors";
 
-const HeaderSection = ({ tittle }) => {
+const HeaderSection = ({ tittle, Secondtittle }) => {
   return (
     <>
       <View style={styles.container}>
         <Feather name="menu" size={35} color="white" />
         <Text style={styles.mTittle}>{tittle}</Text>
+        {/* <Text style={styles.mTittle}>{Secondtittle}</Text> */}
         <Image
           style={styles.userImg}
           source={require("../assets/images/user.png")}

@@ -10,6 +10,7 @@ export const Colors = {
   white: '#FFFFFF',
   black: '#000000',
   border_color: '#674778',
+  greay_theam: '#969696',
 };
 
 export const BtnColler = {
