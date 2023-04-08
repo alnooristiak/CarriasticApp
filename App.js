@@ -17,6 +17,7 @@ import TaDaBillInputScreen from "./src/screen/TaDaBillInputScreen";
 import TaDaBillPdfViewScreen from "./src/screen/TaDaBillPdfViewScreen";
 import TaDaBillConfigScreen from "./src/screen/TaDaBillConfigScreen";
 import NotificationScreen from "./src/screen/NotificationScreen";
+import WelcomeLearningPage from "./src/screen/WelcomeLearningPage";
 
 export default function App() {
   return (
@@ -45,7 +46,10 @@ export default function App() {
       {/* <TaDaBillConfigScreen /> */}
 
       {/* === Notification === */}
-      <NotificationScreen />
+      {/* <NotificationScreen /> */}
+
+      {/* === Welcome Learning Page === */}
+      <WelcomeLearningPage />
     </View>
   );
 }

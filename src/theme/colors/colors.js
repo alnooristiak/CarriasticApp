@@ -1,4 +1,5 @@
 export const Colors = {
+  light_purple: '#BA51F1',
   purple_light: '#640A94',
   purple_mid_dark: '#370054',
   purple_dark: '#370054',
