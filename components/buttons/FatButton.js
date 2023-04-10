@@ -3,9 +3,9 @@ import React from "react";
 import { typography } from "../../src/theme/styles/typography";
 import { Colors } from "../../src/theme/colors/colors";
 
-const FatButton = ({ onPress, tittle }) => {
+const FatButton = ({ onPress, tittle, bgColor }) => {
   return (
-    <TouchableOpacity style={styles.buttonStyle} onPress={onPress}>
+    <TouchableOpacity style={[styles.buttonStyle, {backgroundColor: bgColor}]} onPress={onPress}>
       <Text style={styles.buttonText}>{tittle}</Text>
     </TouchableOpacity>
   );

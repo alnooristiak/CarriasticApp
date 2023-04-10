@@ -46,7 +46,7 @@ export default function App() {
       {/* <TaDaBillConfigScreen /> */}
 
       {/* === Notification === */}
-      {/* <NotificationScreen /> */}
+      {/* <NotificationScreen />   */}
 
       {/* === Welcome Learning Page === */}
       <WelcomeLearningPage />
