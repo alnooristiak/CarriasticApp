@@ -3,6 +3,7 @@ import React from "react";
 import HeaderSection from "../../components/HeaderSection";
 import FatButton from "../../components/buttons/FatButton";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
+import { Colors } from "../theme/colors/colors";
 
 const AttendenceScreen = () => {
   return (
@@ -11,10 +12,10 @@ const AttendenceScreen = () => {
 
       <View style={styles.buttonSec}>
         <View style={{ marginVertical: 20 }}>
-          <FatButton tittle="Entry" />
+          <FatButton bgColor={Colors.green} tittle="Entry" />
         </View>
         <View style={{ marginVertical: 20 }}>
-          <FatButton tittle="Exit" />
+          <FatButton bgColor={Colors.rad} tittle="Exit" />
         </View>
       </View>
 

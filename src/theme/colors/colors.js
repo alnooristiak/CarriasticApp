@@ -5,6 +5,7 @@ export const Colors = {
   purple_dark: '#370054',
   greay: '#dcdde1',
   green: '#44bd32',
+  rad: '#F90000',
   lightGreen: '#78e08f',
   orange: '#ff9f43',
   darkBlue: '#341f97',

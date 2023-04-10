@@ -3,6 +3,7 @@ import React from 'react'
 import HeaderSection from '../../components/HeaderSection'
 import HomeIconButton from '../../components/buttons/HomeIconButton'
 import NotifiText from '../../components/particles/NotifiText'
+import { Colors } from '../theme/colors/colors'
 
 const NotificationScreen = () => {
   return (
@@ -10,38 +11,44 @@ const NotificationScreen = () => {
       <HeaderSection tittle="Notification" />
 
       <View style={styles.notifiTextContainer}>
-          <View style={{marginBottom: 10}}>
+          <View style={styles.notifiTextSec}>
             <NotifiText 
+            bgColor={Colors.green}
             tittle='Your application for leave absence has been accepted' 
             />
           </View>
 
-          <View style={{marginBottom: 10}}>
+          <View style={styles.notifiTextSec}>
             <NotifiText 
+            bgColor={Colors.purple_mid_dark}
             tittle='Your application for leave absence has been accepted' 
             />
           </View>
 
-          <View style={{marginBottom: 10}}>
+          <View style={styles.notifiTextSec}>
             <NotifiText 
+            bgColor={Colors.border_color}
             tittle='HR has viewed your leave application' 
             />
           </View>
 
-          <View style={{marginBottom: 10}}>
+          <View style={styles.notifiTextSec}>
             <NotifiText 
+            bgColor={Colors.green}
             tittle='Your application for leave absence has sent to HR' 
             />
           </View>
 
-          <View style={{marginBottom: 10}}>
+          <View style={styles.notifiTextSec}>
             <NotifiText 
+            bgColor={Colors.purple_mid_dark}
             tittle='Your requisition request has been accepted' 
             />
           </View>
 
-          <View style={{marginBottom: 10}}>
+          <View style={styles.notifiTextSec}>
             <NotifiText 
+            bgColor={Colors.border_color}
             tittle='Your requisition request has sent to admin' 
             />
           </View>
@@ -65,6 +72,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 50,
-    marginBottom: 23
+    marginBottom: 24
+  },
+  notifiTextSec: {
+    marginBottom: 20
   }
 })

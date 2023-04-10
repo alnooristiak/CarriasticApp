@@ -33,7 +33,9 @@ export default function App() {
       {/* <LeaveApplicationScreen /> */}
       {/* <LeaveApplicationSentSceen /> */}
       {/* <LeavApplicationVPdfScreen /> */}
-      {/* <AttendenceScreen /> */}
+
+      {/* === Attendence Screen === */}
+      <AttendenceScreen />
 
       {/* === Requisition === */}
       {/* <RequisitionPdfScreen /> */}
@@ -49,7 +51,7 @@ export default function App() {
       {/* <NotificationScreen />   */}
 
       {/* === Welcome Learning Page === */}
-      <WelcomeLearningPage />
+      {/* <WelcomeLearningPage /> */}
     </View>
   );
 }

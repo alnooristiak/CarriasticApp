@@ -15,11 +15,11 @@ export default FatButton;
 
 const styles = StyleSheet.create({
   buttonStyle: {
-    backgroundColor: Colors.purple_light,
+    // backgroundColor: Colors.purple_light,
     padding: 12,
     borderRadius: 8,
-    width: 155,
-    height: 74,
+    width: 265,
+    height: 60,
     justifyContent: "center",
     alignSelf: "center",
   },

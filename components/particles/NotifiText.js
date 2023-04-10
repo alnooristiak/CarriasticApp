@@ -2,9 +2,9 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Colors } from '../../src/theme/colors/colors'
 
-const NotifiText = ({ tittle }) => {
+const NotifiText = ({ tittle, bgColor }) => {
   return (
-    <View style={styles.textContainer}>
+    <View style={[styles.textContainer, {backgroundColor: bgColor}]}>
       <Text style={styles.textStyle}>{tittle}</Text>
     </View>
   )
@@ -14,10 +14,10 @@ export default NotifiText
 
 const styles = StyleSheet.create({
     textContainer: {
-        backgroundColor: Colors.green,
+        // backgroundColor: Colors.green,
         justifyContent: 'center',
         alignItems: 'center',
-        width: 345
+        width: 345,
     },
     textStyle: {
         paddingVertical: 7,
