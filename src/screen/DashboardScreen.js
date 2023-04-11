@@ -5,30 +5,30 @@ import BigButton from "../../components/buttons/BigButton";
 import SlimButton from "../../components/buttons/SlimButton";
 import ImageButton from "../../components/buttons/ImageButton";
 
-const DashboardScreen = () => {
+const DashboardScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       {/* === header section start === */}
-      <HeaderSection tittle="Dashboard" />
+      <HeaderSection onPress={() => navigation.navigate('UserProfileScreen')} tittle="Dashboard" />
       {/* === header section end ===  */}
 
       {/* === big button section start ===  */}
       <View style={styles.buttonContainer}>
         <View style={styles.smBtnSection}>
-          <BigButton tittle="Leave Application" />
+          <BigButton onPress={() => navigation.navigate("LeaveApplicationScreen")} tittle="Leave Application" />
           <BigButton tittle="Leave Quota" />
         </View>
         <View style={styles.smBtnSection}>
           <BigButton tittle="Attendence History" />
-          <BigButton tittle="Attendence" />
+          <BigButton onPress={() => navigation.navigate("AttendenceScreen")}  tittle="Attendence" />
         </View>
         <View style={styles.smBtnSection}>
-          <BigButton tittle="Requsition" />
-          <BigButton tittle="Ta-Da Bill" />
+          <BigButton onPress={() => navigation.navigate("RequisitionInputScreen")}  tittle="Requsition" />
+          <BigButton onPress={() => navigation.navigate("TaDaBillInputScreen")} tittle="Ta-Da Bill" />
         </View>
         <View style={styles.smBtnSection}>
-          <BigButton tittle="Notifications" />
-          <BigButton tittle="Training" />
+          <BigButton onPress={() => navigation.navigate("NotificationScreen")} tittle="Notifications" />
+          <BigButton onPress={() => navigation.navigate("WelcomeLearningPage")} tittle="Training" />
         </View>
         <View style={styles.smBtnSection}>
           <BigButton tittle="Events" />
@@ -40,7 +40,7 @@ const DashboardScreen = () => {
       {/* === slim button section start ===  */}
       <View style={{ padding: 10 }}>
         <View style={styles.smBtnSection}>
-          <SlimButton tittle="sign out" />
+          <SlimButton onPress={() => navigation.navigate("LoginScreen")} tittle="sign out" />
           <ImageButton img={require("../../assets/icons/chat_icon.png")} />
         </View>
       </View>

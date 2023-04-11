@@ -7,7 +7,7 @@ import ParagrapWithLink from "../../components/particles/ParagrapWithLink";
 import InfoIconLink from "../../components/buttons/InfoIconLink";
 // import CheckBox from '@react-native-community/checkbox';
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
   return (
     <View style={styles.conatiner}>
       <View style={styles.losogSection}>
@@ -58,7 +58,7 @@ const LoginScreen = () => {
       </View>
 
       <View>
-        <ParagrapWithLink linkText='SIGNUP' simpleText='Need an account?       ' />
+        <ParagrapWithLink onPress={() => navigation.navigate("SignUpScreen")} linkText='SIGNUP' simpleText='Need an account?       ' />
       </View>
 
       <View style={styles.infoLink}>

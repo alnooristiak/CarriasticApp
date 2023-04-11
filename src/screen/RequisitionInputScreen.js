@@ -6,7 +6,7 @@ import { Colors } from "../theme/colors/colors";
 import CommonButton from "../../components/buttons/CommonButton";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 
-const RequisitionInputScreen = () => {
+const RequisitionInputScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <HeaderSection tittle="Requisition" />
@@ -28,6 +28,7 @@ const RequisitionInputScreen = () => {
 
         <View style={{ marginVertical: "30%" }}>
           <HomeIconButton
+            onPress={() => navigation.navigate("DashboardScreen")}
             img={require("../../assets/icons/small_homeIcon.png")}
           />
         </View>

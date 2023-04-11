@@ -5,7 +5,7 @@ import FatButton from "../../components/buttons/FatButton";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 import { Colors } from "../theme/colors/colors";
 
-const AttendenceScreen = () => {
+const AttendenceScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <HeaderSection tittle="Attendance" />
@@ -20,7 +20,9 @@ const AttendenceScreen = () => {
       </View>
 
       <View style={styles.homeLink}>
-        <HomeIconButton img={require("../../assets/icons/homeIcon.png")} />
+        <HomeIconButton
+        onPress={() => navigation.navigate("DashboardScreen")}
+        img={require("../../assets/icons/homeIcon.png")} />
       </View>
     </View>
   );

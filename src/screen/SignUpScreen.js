@@ -5,7 +5,7 @@ import InputWithIconSec from "../../components/inputs/InputWithIconSec";
 import { Colors } from "../theme/colors/colors";
 import ParagrapWithLink from "../../components/particles/ParagrapWithLink";
 
-const SignUpScreen = () => {
+const SignUpScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.logoSec}>
@@ -74,7 +74,7 @@ const SignUpScreen = () => {
       </View>
 
       {/* bottom link section */}
-      <ParagrapWithLink
+      <ParagrapWithLink onPress={() => navigation.navigate("LoginScreen")}
         linkText="LOGIN"
         simpleText="Already have an account?  "
       />

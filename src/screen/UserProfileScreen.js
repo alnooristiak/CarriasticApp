@@ -4,13 +4,14 @@ import ProfileTopBar from "../../components/ProfileTopBar";
 import UserDetail from "../../components/particles/UserDetail";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 
-const UserProfileScreen = () => {
+const UserProfileScreen = ({ navigation }) => {
   return (
     <View>
       <View>
-        <ProfileTopBar 
-        tittle="test name" 
-        linkTittle="Edit Profile" 
+        <ProfileTopBar
+          onPress={() => navigation.goBack()}
+          tittle="test name"
+          linkTittle="Edit Profile"
         />
       </View>
 
@@ -20,6 +21,7 @@ const UserProfileScreen = () => {
 
       <View style={styles.homeButton}>
         <HomeIconButton
+          onPress={() => navigation.navigate("DashboardScreen")}
           style={styles.homeIconImage}
           img={require("../../assets/icons/homeIcon.png")}
         />
@@ -35,7 +37,7 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     marginTop: 90,
-    justifyContent: 'center',
-    alignSelf: 'center'
+    justifyContent: "center",
+    alignSelf: "center",
   },
 });

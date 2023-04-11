@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StatusBar, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -24,6 +24,7 @@ const StackNavigations = () => {
   const Stack = createNativeStackNavigator();
   return (
     <>
+    <StatusBar style="auto" backgroundColor="#370054" barStyle="light-content" />
       <NavigationContainer>
         <Stack.Navigator 
         initialRouteName="DashboardScreen"

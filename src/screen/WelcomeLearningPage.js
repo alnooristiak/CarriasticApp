@@ -1,4 +1,5 @@
 import {
+  Pressable,
   StyleSheet,
   Text,
   TextInput,
@@ -11,16 +12,18 @@ import { Colors } from "../theme/colors/colors";
 import { typography } from "../theme/styles/typography";
 import FatButton from "../../components/buttons/FatButton";
 
-const WelcomeLearningPage = () => {
+const WelcomeLearningPage = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.leftArrow}>
-        <AntDesign
-          style={styles.iconStyle}
-          name="arrowleft"
-          size={35}
-          color="white"
-        />
+        <Pressable onPress={() => navigation.goBack()}>
+          <AntDesign
+            style={styles.iconStyle}
+            name="arrowleft"
+            size={35}
+            color="white"
+          />
+        </Pressable>
       </View>
 
       <View style={styles.texContainer}>
@@ -38,7 +41,10 @@ const WelcomeLearningPage = () => {
       </View>
 
       <View style={styles.loginBtn}>
-        <TouchableOpacity style={styles.buttonStyle}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("LoginScreen")}
+          style={styles.buttonStyle}
+        >
           <Text style={styles.buttonText}>Login</Text>
           <AntDesign name="rightcircle" size={28} color={Colors.purple_light} />
         </TouchableOpacity>

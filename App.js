@@ -29,7 +29,7 @@ export default function App() {
   const Stack = createNativeStackNavigator();
   return (
     <>
-      <StatusBar style="auto" barStyle="light-content" />
+      
 
       {/* === drawer navigation === */}
       {/* <DrawerNavigator /> */}
