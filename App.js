@@ -1,5 +1,9 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
 import DashboardScreen from "./src/screen/DashboardScreen";
 import ProfileTopBar from "./components/ProfileTopBar";
 import UserProfileScreen from "./src/screen/UserProfileScreen";
@@ -18,11 +22,18 @@ import TaDaBillPdfViewScreen from "./src/screen/TaDaBillPdfViewScreen";
 import TaDaBillConfigScreen from "./src/screen/TaDaBillConfigScreen";
 import NotificationScreen from "./src/screen/NotificationScreen";
 import WelcomeLearningPage from "./src/screen/WelcomeLearningPage";
+import StackNavigations from "./src/navigations/StackNavigations";
+// import 'react-native-gesture-handler';
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
+    <>
+      <StatusBar style="auto" barStyle="light-content" />
+
+      {/* === drawer navigation === */}
+      {/* <DrawerNavigator /> */}
+
       {/* <DashboardScreen /> */}
       {/* <UserProfileScreen /> */}
       {/* <EditProfileScreen /> */}
@@ -35,7 +46,7 @@ export default function App() {
       {/* <LeavApplicationVPdfScreen /> */}
 
       {/* === Attendence Screen === */}
-      <AttendenceScreen />
+      {/* <AttendenceScreen /> */}
 
       {/* === Requisition === */}
       {/* <RequisitionPdfScreen /> */}
@@ -52,17 +63,18 @@ export default function App() {
 
       {/* === Welcome Learning Page === */}
       {/* <WelcomeLearningPage /> */}
-    </View>
+      <StackNavigations />
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
+    // flex: 1,
+    // backgroundColor: "#fff",
     // alignItems: 'center',
     // justifyContent: 'center',
     // padding: 10,
-    marginTop: 10,
+    // marginTop: 10,
   },
 });
