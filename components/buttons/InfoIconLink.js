@@ -16,5 +16,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         padding: 10
+    },
+    iconImg: {
+      width: 48,
+      height: 48,
     }
 })

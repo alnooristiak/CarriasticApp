@@ -1,4 +1,4 @@
-import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StatusBar, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import InputWithIconSec from "../../components/inputs/InputWithIconSec";
 import LogoImage from "../../components/particles/LogoImage";
@@ -10,6 +10,11 @@ import InfoIconLink from "../../components/buttons/InfoIconLink";
 const LoginScreen = ({ navigation }) => {
   return (
     <View style={styles.conatiner}>
+      <StatusBar
+        style="auto"
+        backgroundColor="#FFFFFF"
+        barStyle="dark-content"
+      />
       <View style={styles.losogSection}>
         <LogoImage />
       </View>
@@ -56,14 +61,19 @@ const LoginScreen = ({ navigation }) => {
           </View>
         </View>
       </View>
-
+      
       <View>
-        <ParagrapWithLink onPress={() => navigation.navigate("SignUpScreen")} linkText='SIGNUP' simpleText='Need an account?       ' />
+        <ParagrapWithLink
+          onPress={() => navigation.navigate("SignUpScreen")}
+          linkText="SIGNUP"
+          simpleText="Need an account?       "
+        />
       </View>
 
       <View style={styles.infoLink}>
         <InfoIconLink img={require("../../assets/icons/info_i.png")} />
       </View>
+
     </View>
   );
 };
@@ -72,8 +82,8 @@ export default LoginScreen;
 
 const styles = StyleSheet.create({
   conatiner: {
-    backgroundColor: Colors.purple_light,
-    height: '100%'
+    backgroundColor: Colors.black,
+    height: "100%",
   },
   losogSection: {
     marginTop: 40,
@@ -120,11 +130,11 @@ const styles = StyleSheet.create({
   checkboxSection: {
     // justifyContent: 'center',
     // alignItems: 'center',
-    paddingLeft: 52
+    paddingLeft: 52,
   },
   checBText: {
     fontSize: 16,
-    fontWeight: 400
+    fontWeight: 400,
   },
   signUpBtnText: {
     color: Colors.white,
@@ -137,14 +147,14 @@ const styles = StyleSheet.create({
     marginVertical: 17,
     fontSize: 14,
     fontWeight: 400,
-    marginRight: 52
+    marginRight: 52,
   },
   line: {
     border: 1,
-    borderWidth: 0.5,
+    borderWidth: 1,
     borderColor: "black",
-    width: '80%',
-    alignSelf: 'center'
+    width: "80%",
+    alignSelf: "center",
   },
   orText: {
     textAlign: "center",
@@ -153,6 +163,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   infoLink: {
-    bottom: -50
-  }
+    bottom: -40,
+  },
 });

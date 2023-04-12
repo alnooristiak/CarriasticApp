@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Pressable, Image } from "react-native";
 import React from "react";
 
 const UserIconImageLink = ({ navigation }) => {
   return (
     <>
-      <Pressable onPress={() => navigation.navigate("UserProfileScreen")}>
+      <Pressable 
+      onPress={()=>navigation.navigate("UserProfileScreen")}>
         <Image
           style={styles.userImg}
           source={require("../../assets/images/user.png")}

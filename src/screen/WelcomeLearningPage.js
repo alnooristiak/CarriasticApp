@@ -1,5 +1,6 @@
 import {
   Pressable,
+  StatusBar,
   StyleSheet,
   Text,
   TextInput,
@@ -15,6 +16,11 @@ import FatButton from "../../components/buttons/FatButton";
 const WelcomeLearningPage = ({ navigation }) => {
   return (
     <View style={styles.container}>
+      <StatusBar
+        style="auto"
+        backgroundColor={Colors.light_purple}
+        barStyle="light-content"
+      />
       <View style={styles.leftArrow}>
         <Pressable onPress={() => navigation.goBack()}>
           <AntDesign
@@ -61,7 +67,7 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   leftArrow: {
-    marginVertical: 50,
+    marginVertical: 25,
     marginLeft: 20,
   },
   texContainer: {

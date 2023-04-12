@@ -1,4 +1,11 @@
-import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+  Pressable,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import React from "react";
 import LogoImage from "../../components/particles/LogoImage";
 import InputWithIconSec from "../../components/inputs/InputWithIconSec";
@@ -8,6 +15,11 @@ import ParagrapWithLink from "../../components/particles/ParagrapWithLink";
 const SignUpScreen = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
+      <StatusBar
+        style="auto"
+        backgroundColor="#FFFFFF"
+        barStyle="dark-content"
+      />
       <View style={styles.logoSec}>
         <LogoImage />
       </View>
@@ -74,7 +86,8 @@ const SignUpScreen = ({ navigation }) => {
       </View>
 
       {/* bottom link section */}
-      <ParagrapWithLink onPress={() => navigation.navigate("LoginScreen")}
+      <ParagrapWithLink
+        onPress={() => navigation.navigate("LoginScreen")}
         linkText="LOGIN"
         simpleText="Already have an account?  "
       />
@@ -85,6 +98,9 @@ const SignUpScreen = ({ navigation }) => {
 export default SignUpScreen;
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor: Colors.white,
+  },
   logoSec: {
     marginTop: 45,
     marginBottom: 45,
@@ -99,6 +115,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     overflow: "visible",
+    zindex: 1,
   },
   mainBgContainer: {
     width: "100%",
