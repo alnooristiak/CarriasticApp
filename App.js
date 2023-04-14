@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
@@ -23,6 +24,8 @@ import TaDaBillConfigScreen from "./src/screen/TaDaBillConfigScreen";
 import NotificationScreen from "./src/screen/NotificationScreen";
 import WelcomeLearningPage from "./src/screen/WelcomeLearningPage";
 import StackNavigations from "./src/navigations/StackNavigations";
+import DrawerNavigator from './src/navigations/DrawerNavigator';
+import NavigationS from './src/navigations/NavigationS';
 // import 'react-native-gesture-handler';
 
 export default function App() {
@@ -63,7 +66,9 @@ export default function App() {
 
       {/* === Welcome Learning Page === */}
       {/* <WelcomeLearningPage /> */}
+      
       <StackNavigations />
+      {/* <NavigationS /> */}
     </>
   );
 }

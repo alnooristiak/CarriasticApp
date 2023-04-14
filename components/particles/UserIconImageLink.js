@@ -1,16 +1,16 @@
-import { StyleSheet, Text, View, Pressable, Image } from "react-native";
+import { StyleSheet, Text, View, Pressable, Image, TouchableOpacity } from "react-native";
 import React from "react";
 
-const UserIconImageLink = ({ navigation }) => {
+const UserIconImageLink = ({ onPress }) => {
   return (
     <>
-      <Pressable 
-      onPress={()=>navigation.navigate("UserProfileScreen")}>
+      <TouchableOpacity 
+      onPress={onPress}>
         <Image
           style={styles.userImg}
           source={require("../../assets/images/user.png")}
         />
-      </Pressable>
+      </TouchableOpacity>
     </>
   );
 };

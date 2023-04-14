@@ -1,16 +1,19 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import DashboardScreen from "../screen/DashboardScreen";
+import AttendenceScreen from "../screen/AttendenceScreen";
+// import { NavigationContainer } from "@react-navigation/native";
 
-const Drawer = createDrawerNavigator();
 const DrawerNavigator = () => {
+  const Drawer = createDrawerNavigator();
   return (
     <>
-      <Drawer.Navigator>
-        <Drawer.Screen name="DashboardScreen" component={DashboardScreen} />
-        {/* <Drawer.Screen name="Article" component={Article} /> */}
-      </Drawer.Navigator>
+      {/* <NavigationContainer> */}
+        <Drawer.Navigator screenOptions={{headerShown: false}}>
+          <Drawer.Screen name="AttendenceScreen" component={AttendenceScreen} />
+          {/* <Drawer.Screen name="Article" component={Article} /> */}
+        </Drawer.Navigator>
+      {/* </NavigationContainer> */}
     </>
   );
 };
