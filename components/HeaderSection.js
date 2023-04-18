@@ -10,12 +10,15 @@ import React from "react";
 import { Feather } from "@expo/vector-icons";
 import { Colors } from "../src/theme/colors/colors";
 import UserIconImageLink from "./particles/UserIconImageLink";
+import DrawerNavigator from "../src/navigations/DrawerNavigator";
 
 const HeaderSection = ({ navigation, tittle, Secondtittle, onPress }) => {
   return (
     <>
       <View style={styles.container}>
-        <Feather name="menu" size={35} color="white" />
+        <TouchableOpacity onPress={() => navigation.toggleDrawer(DrawerNavigator)}>
+          <Feather name="menu" size={35} color="white" />
+        </TouchableOpacity>
         <Text style={styles.mTittle}>{tittle}</Text>
         {/* <Text style={styles.mTittle}>{Secondtittle}</Text> */}
         <UserIconImageLink

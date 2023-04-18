@@ -67,8 +67,8 @@ export default function App() {
       {/* === Welcome Learning Page === */}
       {/* <WelcomeLearningPage /> */}
       
-      <StackNavigations />
-      {/* <NavigationS /> */}
+      {/* <StackNavigations /> */}
+      <NavigationS />
     </>
   );
 }

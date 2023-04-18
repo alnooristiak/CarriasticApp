@@ -9,11 +9,12 @@ import DrawerNavigator from "../navigations/DrawerNavigator";
 const DashboardScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <DrawerNavigator />
 
       {/* === header section start === */}
       <HeaderSection tittle="Dashboard" />
       {/* === header section end ===  */}
+
+      {/* <DrawerNavigator /> */}
 
       {/* === big button section start ===  */}
       <View style={styles.buttonContainer}>

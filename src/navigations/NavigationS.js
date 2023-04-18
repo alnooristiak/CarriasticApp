@@ -9,7 +9,7 @@ const NavigationS = () => {
     <>
       <NavigationContainer>
         <StackNavigations />
-        <DrawerNavigator />
+        {/* <DrawerNavigator /> */}
       </NavigationContainer>
     </>
   );

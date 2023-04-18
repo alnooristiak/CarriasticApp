@@ -10,7 +10,7 @@ const DrawerNavigator = () => {
     <>
       {/* <NavigationContainer> */}
         <Drawer.Navigator screenOptions={{headerShown: false}}>
-          <Drawer.Screen name="AttendenceScreen" component={AttendenceScreen} />
+          <Drawer.Screen name="AttendenceScreen" component={AttendenceScreen} options={{headerShown: true}} />
           {/* <Drawer.Screen name="Article" component={Article} /> */}
         </Drawer.Navigator>
       {/* </NavigationContainer> */}
