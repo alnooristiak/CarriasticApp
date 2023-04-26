@@ -11,7 +11,7 @@ const DashboardScreen = ({ navigation }) => {
     <View style={styles.container}>
 
       {/* === header section start === */}
-      <HeaderSection tittle="Dashboard" />
+      <HeaderSection onPress={() => navigation.toggleDrawer(DrawerNavigator)}  tittle="Dashboard" />
       {/* === header section end ===  */}
 
       {/* <DrawerNavigator /> */}

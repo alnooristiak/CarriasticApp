@@ -25,7 +25,7 @@ const StackNavigations = () => {
   return (
     <>
     <StatusBar style="auto" backgroundColor="#370054" barStyle="light-content" />
-      {/* <NavigationContainer> */}
+      <NavigationContainer>
         <Stack.Navigator 
         initialRouteName="DashboardScreen"
         screenOptions={{
@@ -101,7 +101,7 @@ const StackNavigations = () => {
             component={WelcomeLearningPage}
           />
         </Stack.Navigator>
-      {/* </NavigationContainer> */}
+      </NavigationContainer>
     </>
   );
 };

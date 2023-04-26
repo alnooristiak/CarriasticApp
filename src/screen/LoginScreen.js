@@ -1,90 +1,99 @@
-import { Image, Pressable, StatusBar, StyleSheet, Text, View } from "react-native";
+import {
+  Image,
+  Pressable,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import React from "react";
 import InputWithIconSec from "../../components/inputs/InputWithIconSec";
 import LogoImage from "../../components/particles/LogoImage";
 import { Colors } from "../theme/colors/colors";
 import ParagrapWithLink from "../../components/particles/ParagrapWithLink";
 import InfoIconLink from "../../components/buttons/InfoIconLink";
+import { LinearGradient } from "expo-linear-gradient";
 // import CheckBox from '@react-native-community/checkbox';
 
 const LoginScreen = ({ navigation }) => {
   return (
-    <View style={styles.conatiner}>
-      <StatusBar
-        style="auto"
-        backgroundColor="#FFFFFF"
-        barStyle="dark-content"
-      />
-      <View style={styles.losogSection}>
-        <LogoImage />
-      </View>
+    <LinearGradient colors={['#FFFFFF', '#370054',]} style={{height: '100%'}}>
+      {/* <View style={styles.conatiner}> */}
+        <StatusBar
+          style="auto"
+          backgroundColor="#FFFFFF"
+          barStyle="dark-content"
+        />
+        <View style={styles.losogSection}>
+          <LogoImage />
+        </View>
 
-      {/* image and input sectino */}
-      <View style={[styles.userInputSec]}>
-        <View style={styles.shadowProp}>
-          <Image
-            style={styles.boyImage}
-            source={require("../../assets/images/signup_img.png")}
-          />
-          {/* inputs */}
-          <View style={{ marginTop: 80 }}>
-            <View style={[styles.inputContainerM, styles.lastInput]}>
-              <InputWithIconSec
-                placeholder="Rnter Photo"
-                img={require("../../assets/icons/email_i.png")}
-              />
-            </View>
-            <View style={[styles.inputContainerM, styles.lastInput]}>
-              <InputWithIconSec
-                placeholder="Rnter Photo"
-                img={require("../../assets/icons/lock_i.png")}
-              />
-            </View>
+        {/* image and input sectino */}
+        <View style={[styles.userInputSec]}>
+          <View style={styles.shadowProp}>
+            <Image
+              style={styles.boyImage}
+              source={require("../../assets/images/signup_img.png")}
+            />
+            {/* inputs */}
+            <View style={{ marginTop: 80 }}>
+              <View style={[styles.inputContainerM, styles.lastInput]}>
+                <InputWithIconSec
+                  placeholder="Rnter Photo"
+                  img={require("../../assets/icons/email_i.png")}
+                />
+              </View>
+              <View style={[styles.inputContainerM, styles.lastInput]}>
+                <InputWithIconSec
+                  placeholder="Rnter Photo"
+                  img={require("../../assets/icons/lock_i.png")}
+                />
+              </View>
 
-            <View style={styles.checkboxSection}>
-              <View>
-                {/* <CheckBox 
+              <View style={styles.checkboxSection}>
+                <View>
+                  {/* <CheckBox 
                 disabled={false} 
                 style={styles.checkbox} 
                 /> */}
-                <Text style={styles.checBText}>Remember Me</Text>
+                  <Text style={styles.checBText}>Remember Me</Text>
+                </View>
               </View>
-            </View>
-            <View>
-              <Pressable style={styles.signUpBtn}>
-                <Text style={styles.signUpBtnText}>LOGIN</Text>
-              </Pressable>
-              <Text style={styles.forgotText}>Forgot Password?</Text>
-              <View style={styles.line}></View>
-              <Text style={styles.orText}>OR</Text>
+              <View>
+                <Pressable style={styles.signUpBtn}>
+                  <Text style={styles.signUpBtnText}>LOGIN</Text>
+                </Pressable>
+                <Text style={styles.forgotText}>Forgot Password?</Text>
+                <View style={styles.line}></View>
+                <Text style={styles.orText}>OR</Text>
+              </View>
             </View>
           </View>
         </View>
-      </View>
-      
-      <View>
-        <ParagrapWithLink
-          onPress={() => navigation.navigate("SignUpScreen")}
-          linkText="SIGNUP"
-          simpleText="Need an account?       "
-        />
-      </View>
 
-      <View style={styles.infoLink}>
-        <InfoIconLink img={require("../../assets/icons/info_i.png")} />
-      </View>
+        <View>
+          <ParagrapWithLink
+            onPress={() => navigation.navigate("SignUpScreen")}
+            linkText="SIGNUP"
+            simpleText="Need an account?       "
+          />
+        </View>
 
-    </View>
+        <View style={styles.infoLink}>
+          <InfoIconLink img={require("../../assets/icons/info_i.png")} />
+        </View>
+      {/* </View> */}
+    </LinearGradient>
   );
 };
 
 export default LoginScreen;
 
 const styles = StyleSheet.create({
-  conatiner: {
-    backgroundColor: Colors.black,
-    height: "100%",
-  },
+  // conatiner: {
+  //   backgroundColor: Colors.black,
+  //   height: "100%",
+  // },
   losogSection: {
     marginTop: 40,
     marginBottom: 30,
@@ -99,10 +108,10 @@ const styles = StyleSheet.create({
 
   shadowProp: {
     width: "90%",
-    borderWidth: 1,
-    borderColor: "green",
     borderRadius: 45,
     padding: 10,
+    backgroundColor: 'white',
+    elevation: 5
   },
   boyImage: {
     // width: 120,
@@ -150,7 +159,7 @@ const styles = StyleSheet.create({
     marginRight: 52,
   },
   line: {
-    border: 1,
+    border: 0.5,
     borderWidth: 1,
     borderColor: "black",
     width: "80%",
@@ -163,6 +172,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   infoLink: {
-    bottom: -40,
+    bottom: -20,
   },
 });
