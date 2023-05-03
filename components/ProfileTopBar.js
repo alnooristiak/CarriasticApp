@@ -4,7 +4,13 @@ import { AntDesign } from "@expo/vector-icons";
 import { Colors } from "../src/theme/colors/colors";
 import { Feather } from "@expo/vector-icons";
 
-const ProfileTopBar = ({ onPress, tittle, linkTittle, navigation, onPressed }) => {
+const ProfileTopBar = ({
+  onPress,
+  tittle,
+  linkTittle,
+  navigation,
+  onPressed,
+}) => {
   return (
     <View style={[styles.container, styles.shadowProp]}>
       <View style={styles.iconTittle}>
@@ -72,7 +78,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
     alignSelf: "center",
     width: 165,
-    height: 165
+    height: 165,
   },
   userImageContainer: {},
   editLink: {

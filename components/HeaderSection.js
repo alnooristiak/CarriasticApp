@@ -12,7 +12,13 @@ import { Colors } from "../src/theme/colors/colors";
 import UserIconImageLink from "./particles/UserIconImageLink";
 import DrawerNavigator from "../src/navigations/DrawerNavigator";
 
-const HeaderSection = ({ navigation, tittle, Secondtittle, onPress, onPresss }) => {
+const HeaderSection = ({
+  navigation,
+  tittle,
+  Secondtittle,
+  onPress,
+  onPresss,
+}) => {
   return (
     <>
       <View style={styles.container}>
@@ -21,9 +27,7 @@ const HeaderSection = ({ navigation, tittle, Secondtittle, onPress, onPresss }) 
         </TouchableOpacity>
         <Text style={styles.mTittle}>{tittle}</Text>
         {/* <Text style={styles.mTittle}>{Secondtittle}</Text> */}
-        <UserIconImageLink
-          onPress={onPresss}
-        />
+        <UserIconImageLink onPress={onPresss} />
       </View>
     </>
   );

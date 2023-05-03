@@ -1,9 +1,9 @@
-import { ScrollView, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import ProfileTopBar from '../../components/ProfileTopBar'
-import SimpleInputSec from '../../components/inputs/SimpleInputSec'
-import SlimButton from '../../components/buttons/SlimButton'
-import HomeIconButton from '../../components/buttons/HomeIconButton'
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import ProfileTopBar from "../../components/ProfileTopBar";
+import SimpleInputSec from "../../components/inputs/SimpleInputSec";
+import SlimButton from "../../components/buttons/SlimButton";
+import HomeIconButton from "../../components/buttons/HomeIconButton";
 
 const EditProfileScreen = () => {
   return (
@@ -38,29 +38,28 @@ const EditProfileScreen = () => {
         </View>
 
         <View style={styles.homeIconBtn}>
-            <HomeIconButton img={require("../../assets/icons/small_homeIcon.png")} />
+          <HomeIconButton
+            img={require("../../assets/icons/small_homeIcon.png")}
+          />
         </View>
-
       </ScrollView>
     </View>
   );
-}
+};
 
-export default EditProfileScreen
+export default EditProfileScreen;
 
 const styles = StyleSheet.create({
-    container: {
-
-    },
-    inputContainer: {
-        marginTop: 115
-    },
-    slimBtnContainer: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 10,
-    },
-    homeIconBtn: {
-        marginTop: 30
-    }
-})
+  container: {},
+  inputContainer: {
+    marginTop: 115,
+  },
+  slimBtnContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 10,
+  },
+  homeIconBtn: {
+    marginTop: 30,
+  },
+});

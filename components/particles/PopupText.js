@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     borderBottomColor: Colors.greay_theam,
     borderBottomWidth: 2,
     padding: 35,
-    borderRadius: 25
+    borderRadius: 25,
   },
   popupText: {
     fontSize: 24,

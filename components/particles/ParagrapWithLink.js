@@ -16,7 +16,7 @@ const ParagrapWithLink = ({ onPress, simpleText, linkText }) => {
 export default ParagrapWithLink;
 
 const styles = StyleSheet.create({
-    // navigate section
+  // navigate section
   navigateSec: {
     flexDirection: "row",
     alignItems: "center",
@@ -30,6 +30,6 @@ const styles = StyleSheet.create({
   },
   loginText: {
     textDecorationLine: "underline",
-    color: Colors.black
+    color: Colors.black,
   },
 });

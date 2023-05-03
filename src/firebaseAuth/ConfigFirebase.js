@@ -12,14 +12,14 @@ const firebaseConfig = {
   storageBucket: "carriastic-6400e.appspot.com",
   messagingSenderId: "417824227135",
   appId: "1:417824227135:web:ba2b4cd828a5e9be2e9d8a",
-  measurementId: "G-GW38N656E7"
+  measurementId: "G-GW38N656E7",
 };
 
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
-if (!firebase.app.length){
-    firebase.initialize(firebaseConfig);
+if (!firebase.app.length) {
+  firebase.initialize(firebaseConfig);
 }
 
-export { firebase }
+export { firebase };

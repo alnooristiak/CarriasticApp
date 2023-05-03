@@ -23,6 +23,5 @@ const styles = StyleSheet.create({
     textAlign: "center",
     paddingVertical: 7,
   },
-  buttonBody: {
-  },
+  buttonBody: {},
 });

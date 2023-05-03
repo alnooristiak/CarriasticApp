@@ -13,7 +13,9 @@ const UserDetail = () => {
 
       <Text style={styles.textStSecondery}>Department: Admin</Text>
 
-      <Text style={[styles.textStMain, styles.underlineText]}>rafid@carriastic.com</Text>
+      <Text style={[styles.textStMain, styles.underlineText]}>
+        rafid@carriastic.com
+      </Text>
 
       <Text style={styles.textStSecondery}>+880 1850700054</Text>
 
@@ -42,5 +44,5 @@ const styles = StyleSheet.create({
   },
   underlineText: {
     textDecorationLine: "underline",
-  }
+  },
 });

@@ -4,10 +4,13 @@ import HeaderSection from "../../components/HeaderSection";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 import { Colors } from "../theme/colors/colors";
 
-const LeavApplicationVPdfScreen = () => {
+const LeavApplicationVPdfScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <HeaderSection tittle="Leave Application" />
+      <HeaderSection
+        onPresss={() => navigation.navigate("EditProfileScreen")}
+        tittle="Leave Application"
+      />
 
       <View style={styles.pdfViewSec}>
         <View style={styles.detailLetter}>

@@ -13,20 +13,20 @@ const SlimButton = ({ onPress, tittle }) => {
 export default SlimButton;
 
 const styles = StyleSheet.create({
-    buttonStyle: {
-        width: 145,
-        height: 30,
-        borderRadius: 7,
-        backgroundColor: Colors.purple_dark,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    buttonText: {
-        color: Colors.white,
-        fontSize: 16,
-        textAlign: 'center',
-        paddingHorizontal: 20,
-        fontWeight: 700,
-        textTransform: 'uppercase',
-    }
+  buttonStyle: {
+    width: 145,
+    height: 30,
+    borderRadius: 7,
+    backgroundColor: Colors.purple_dark,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  buttonText: {
+    color: Colors.white,
+    fontSize: 16,
+    textAlign: "center",
+    paddingHorizontal: 20,
+    fontWeight: 700,
+    textTransform: "uppercase",
+  },
 });

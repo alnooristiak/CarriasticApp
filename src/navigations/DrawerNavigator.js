@@ -9,10 +9,14 @@ const DrawerNavigator = () => {
   return (
     <>
       {/* <NavigationContainer> */}
-        <Drawer.Navigator screenOptions={{headerShown: false}}>
-          <Drawer.Screen name="AttendenceScreen" component={AttendenceScreen} options={{headerShown: true}} />
-          {/* <Drawer.Screen name="Article" component={Article} /> */}
-        </Drawer.Navigator>
+      <Drawer.Navigator screenOptions={{ headerShown: false }}>
+        <Drawer.Screen
+          name="AttendenceScreen"
+          component={AttendenceScreen}
+          options={{ headerShown: true }}
+        />
+        {/* <Drawer.Screen name="Article" component={Article} /> */}
+      </Drawer.Navigator>
       {/* </NavigationContainer> */}
     </>
   );

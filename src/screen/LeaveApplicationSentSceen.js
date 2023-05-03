@@ -6,10 +6,10 @@ import CommonButton from "../../components/buttons/CommonButton";
 import { Colors } from "../theme/colors/colors";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 
-const LeaveApplicationSentSceen = () => {
+const LeaveApplicationSentSceen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <HeaderSection tittle="Leave Application" />
+      <HeaderSection onPresss={() => navigation.navigate("EditProfileScreen")}  tittle="Leave Application" />
 
       <View style={styles.textContainer}>
         <View style={styles.textsContainer}>

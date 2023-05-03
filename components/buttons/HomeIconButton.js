@@ -12,7 +12,7 @@ const HomeIconButton = ({ onPress, img }) => {
 export default HomeIconButton;
 
 const styles = StyleSheet.create({
-    homeBtnContainer: {
-        alignSelf: 'center'
-    }
+  homeBtnContainer: {
+    alignSelf: "center",
+  },
 });

@@ -5,7 +5,10 @@ import { Colors } from "../../src/theme/colors/colors";
 
 const FatButton = ({ onPress, tittle, bgColor }) => {
   return (
-    <TouchableOpacity style={[styles.buttonStyle, {backgroundColor: bgColor}]} onPress={onPress}>
+    <TouchableOpacity
+      style={[styles.buttonStyle, { backgroundColor: bgColor }]}
+      onPress={onPress}
+    >
       <Text style={styles.buttonText}>{tittle}</Text>
     </TouchableOpacity>
   );

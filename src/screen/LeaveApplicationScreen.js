@@ -5,10 +5,13 @@ import InputDateButton from "../../components/buttons/InputDateButton";
 import { Colors } from "../theme/colors/colors";
 import CommonButton from "../../components/buttons/CommonButton";
 
-const LeaveApplicationScreen = () => {
+const LeaveApplicationScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <HeaderSection tittle="Leave Application" />
+      <HeaderSection
+        onPresss={() => navigation.navigate("EditProfileScreen")}
+        tittle="Leave Application"
+      />
       <View style={styles.fromContainer}>
         <InputDateButton
           tittle="Leave From"
