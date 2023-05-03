@@ -9,7 +9,7 @@ const EditProfileScreen = () => {
   return (
     <View style={styles.container}>
       <View>
-        <ProfileTopBar tittle="Edit Profile" linkTittle="Change Photo" />
+        <ProfileTopBar tittle="Edit Profilee" linkTittle="Change Photo" />
       </View>
       <ScrollView style={styles.inputContainer}>
         <SimpleInputSec lable="Email ID" placeholder="rafid@carriastic.com" />

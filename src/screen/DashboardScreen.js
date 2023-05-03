@@ -11,7 +11,11 @@ const DashboardScreen = ({ navigation }) => {
     <View style={styles.container}>
 
       {/* === header section start === */}
-      <HeaderSection onPress={() => navigation.toggleDrawer(DrawerNavigator)}  tittle="Dashboard" />
+      <HeaderSection 
+      onPress={() => navigation.toggleDrawer(DrawerNavigator)} 
+      tittle="Dashboard"
+      onPresss={() => navigation.navigate("UserProfileScreen")}
+      />
       {/* === header section end ===  */}
 
       {/* <DrawerNavigator /> */}

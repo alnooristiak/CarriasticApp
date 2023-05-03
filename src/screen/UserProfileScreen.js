@@ -12,6 +12,7 @@ const UserProfileScreen = ({ navigation }) => {
           onPress={() => navigation.goBack()}
           tittle="test name"
           linkTittle="Edit Profile"
+          onPressed={() => navigation.navigate("EditProfileScreen")}
         />
       </View>
 

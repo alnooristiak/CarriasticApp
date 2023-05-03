@@ -4,7 +4,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { Colors } from "../src/theme/colors/colors";
 import { Feather } from "@expo/vector-icons";
 
-const ProfileTopBar = ({ onPress, tittle, linkTittle }) => {
+const ProfileTopBar = ({ onPress, tittle, linkTittle, navigation, onPressed }) => {
   return (
     <View style={[styles.container, styles.shadowProp]}>
       <View style={styles.iconTittle}>
@@ -25,7 +25,7 @@ const ProfileTopBar = ({ onPress, tittle, linkTittle }) => {
           style={styles.imageStyle}
           source={require("../assets/images/user_big.png")}
         />
-        <TouchableOpacity style={styles.editLink} onPress={onPress}>
+        <TouchableOpacity style={styles.editLink} onPress={onPressed}>
           <Feather
             style={[styles.linkTextStyle, styles.linkIcon]}
             name="edit"
@@ -44,10 +44,10 @@ export default ProfileTopBar;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.purple_dark,
-    padding: 15,
+    padding: 10,
     borderBottomLeftRadius: 80,
     borderBottomRightRadius: 80,
-    paddingTop: 30,
+    paddingTop: 10,
     paddingVertical: 95,
   },
   iconStyle: {

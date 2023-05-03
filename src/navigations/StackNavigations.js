@@ -1,5 +1,5 @@
 import { StatusBar, StyleSheet, Text, View } from "react-native";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import DashboardScreen from "../screen/DashboardScreen";
@@ -19,9 +19,41 @@ import TaDaBillConfigScreen from "../screen/TaDaBillConfigScreen";
 import TaDaBillPdfViewScreen from "../screen/TaDaBillPdfViewScreen";
 import WelcomeLearningPage from "../screen/WelcomeLearningPage";
 import NotificationScreen from "../screen/NotificationScreen";
+import firebase from "firebase/compat";
 
-const StackNavigations = () => {
+const StackNavigations = () => { 
+
   const Stack = createNativeStackNavigator();
+
+  // const [initializing, setInitializing] = useState(true);
+  // const [user, setUser] = useState();
+
+  // function AuthStateChangeUser (user) {
+  //   setUser(user);
+  //   if(initializing) setInitializing(false);
+  // }
+  // useEffect(() => {
+  //   const subscriber = firebase.auth().onAuthStateChanged(onAuthStateChanged);
+  //   return subscriber;
+  // }, []);
+
+  // if (initializing) return null;
+
+  // if (!user) {
+  //   return (
+  //     <Stack.Navigator>
+  //       <Stack.Screen 
+  //         name="SignUpScreen" 
+  //         component={SignUpScreen} 
+  //         />
+  //         <Stack.Screen 
+  //         name="LoginScreen" 
+  //         component={LoginScreen} 
+  //         />
+  //     </Stack.Navigator>
+  //   );
+  // }
+
   return (
     <>
     <StatusBar style="auto" backgroundColor="#370054" barStyle="light-content" />
