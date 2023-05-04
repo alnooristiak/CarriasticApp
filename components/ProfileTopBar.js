@@ -14,7 +14,8 @@ const ProfileTopBar = ({
   return (
     <View style={[styles.container, styles.shadowProp]}>
       <View style={styles.iconTittle}>
-        <TouchableOpacity onPress={onPress}>
+        <TouchableOpacity 
+        onPress={onPress}>
           <AntDesign
             style={styles.iconStyle}
             name="arrowleft"

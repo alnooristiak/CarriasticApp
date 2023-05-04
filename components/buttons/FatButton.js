@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     color: Colors.white,
     fontWeight: "bold",
     fontSize: 20,
-    fontFamily: typography.primary,
+    // fontFamily: typography.primary,
     textAlign: "center",
   },
 });

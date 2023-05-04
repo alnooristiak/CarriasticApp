@@ -1,5 +1,5 @@
 {
-  "name": "billapp",
+  "name": "carriastic",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "expo-status-bar": "~1.4.4",
     "firebase": "^9.21.0",
     "react": "18.2.0",
-    "react-native": "0.71.6",
+    "react-native": "0.71.7",
     "react-native-gesture-handler": "~2.9.0",
     "react-native-reanimated": "~2.14.4",
     "react-native-safe-area-context": "4.5.0",
@@ -28,5 +28,16 @@
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
-  "private": true
+  "private": true,
+  "description": "��#\u0000 \u0000T\u0000a\u0000D\u0000a\u0000B\u0000i\u0000l\u0000l\u0000_\u0000R\u0000N\u0000\r\u0000 \u0000",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alnooristiak/TaDaBill_RN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alnooristiak/TaDaBill_RN/issues"
+  },
+  "homepage": "https://github.com/alnooristiak/TaDaBill_RN#readme"
 }
