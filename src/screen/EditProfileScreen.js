@@ -57,9 +57,9 @@ const styles = StyleSheet.create({
   slimBtnContainer: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 10,
+    marginTop: '10%',
   },
   homeIconBtn: {
-    marginTop: 30,
+    marginTop: '27%',
   },
 });

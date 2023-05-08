@@ -38,11 +38,11 @@ export default HeaderSection;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.purple_dark,
-    padding: 20,
+    padding: "6%",
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingVertical: 20,
+    paddingVertical: "6%",
     borderBottomLeftRadius: 40,
     borderBottomRightRadius: 40,
   },

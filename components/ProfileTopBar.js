@@ -51,15 +51,15 @@ export default ProfileTopBar;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: Colors.purple_dark,
-    padding: 10,
+    padding: "5%",
     borderBottomLeftRadius: 80,
     borderBottomRightRadius: 80,
-    paddingTop: 10,
-    paddingVertical: 95,
+    paddingTop: '11%',
+    paddingVertical: "20%",
   },
   iconStyle: {
     // marginTop: 15,
-    marginLeft: 10,
+    marginLeft: '5%',
   },
   iconTittle: {
     position: "relative",
@@ -70,11 +70,12 @@ const styles = StyleSheet.create({
     color: Colors.white,
     fontWeight: 400,
     fontSize: 30,
-    marginLeft: 52,
+    marginLeft: '30%',
+    alignItems: 'center'
   },
   imageStyle: {
     position: "absolute",
-    bottom: -180,
+    top: '130%',
     justifyContent: "center",
     zIndex: 1,
     alignSelf: "center",
@@ -87,7 +88,7 @@ const styles = StyleSheet.create({
   },
   linkTextStyle: {
     position: "relative",
-    bottom: -140,
+    top: '38%',
     right: -275,
     color: Colors.black,
     fontWeight: 400,
@@ -95,6 +96,6 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
   },
   linkIcon: {
-    paddingRight: 8,
+    paddingRight: '2%',
   },
 });

@@ -64,7 +64,7 @@ const DashboardScreen = ({ navigation }) => {
       {/* === big button section end ===  */}
 
       {/* === slim button section start ===  */}
-      <View style={{ padding: 10 }}>
+      <View style={{ padding: "4%" }}>
         <View style={styles.smBtnSection}>
           <SlimButton
             onPress={() => navigation.navigate("LoginScreen")}
@@ -85,14 +85,14 @@ const styles = StyleSheet.create({
     // marginTop: 60
   },
   buttonContainer: {
-    marginTop: 50,
-    padding: 10,
+    marginTop: "15%",
+    padding: "5%",
   },
   smBtnSection: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginHorizontal: 17,
-    marginBottom: 23,
+    marginHorizontal: "3%",
+    marginBottom: "5%",
   },
 });
