@@ -11,29 +11,8 @@ const DrawerNavigator = () => {
   return (
     <>
       {/* <NavigationContainer> */}
-      <Drawer.Navigator
-        screenOptions={{
-          drawerActiveTintColor: "#3A1078",
-          headerShown: false,
-          drawerLabelStyle: {
-            fontSize: 16,
-            fontWeight: 700,
-            marginLeft: -10,
-            color: "purple",
-          },
-        }}
-        initialRouteName="Dashboard"
-      >
-        <Drawer.Screen
-          name="Dashboard"
-          component={DashboardScreen}
-          options={{
-            drawerLabel: () => null,
-            drawerItemStyle: { height: 0 },
-            title: null,
-            drawerIcon: () => null,
-          }}
-        />
+      <Drawer.Navigator initialRouteName="Dashboard">
+        <Drawer.Screen name="Dashboard" component={DashboardScreen} />
         <Drawer.Screen name="Notifications" component={NotificationScreen} />
       </Drawer.Navigator>
     </>

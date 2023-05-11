@@ -70,6 +70,8 @@ const StackNavigations = () => {
         >
           <Stack.Screen name="DashboardScreen" component={DrawerNavigator} />
 
+          <Stack.Screen name="DrawerNavigator" component={DrawerNavigator} />
+
           <Stack.Screen
             name="UserProfileScreen"
             component={UserProfileScreen}
