@@ -19,21 +19,12 @@ const DrawerNavigator = () => {
             fontSize: 16,
             fontWeight: 700,
             marginLeft: -10,
-            color: "purple",
+            color: "white",
           },
         }}
         initialRouteName="Dashboard"
       >
-        <Drawer.Screen
-          name="Dashboard"
-          component={DashboardScreen}
-          options={{
-            drawerLabel: () => null,
-            drawerItemStyle: { height: 0 },
-            title: null,
-            drawerIcon: () => null,
-          }}
-        />
+        <Drawer.Screen name="Dashboard" component={DashboardScreen} />
         <Drawer.Screen name="Notifications" component={NotificationScreen} />
       </Drawer.Navigator>
     </>

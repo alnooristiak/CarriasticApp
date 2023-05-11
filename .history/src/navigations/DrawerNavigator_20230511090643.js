@@ -24,16 +24,7 @@ const DrawerNavigator = () => {
         }}
         initialRouteName="Dashboard"
       >
-        <Drawer.Screen
-          name="Dashboard"
-          component={DashboardScreen}
-          options={{
-            drawerLabel: () => null,
-            drawerItemStyle: { height: 0 },
-            title: null,
-            drawerIcon: () => null,
-          }}
-        />
+        <Drawer.Screen name="Dashboard" component={DashboardScreen} />
         <Drawer.Screen name="Notifications" component={NotificationScreen} />
       </Drawer.Navigator>
     </>

@@ -22,7 +22,8 @@ import NotificationScreen from "../screen/NotificationScreen";
 import firebase from "firebase/compat";
 import DrawerNavigator from "./DrawerNavigator";
 
-const StackNavigations = () => {
+const StackNavigations = () => { 
+
   const Stack = createNativeStackNavigator();
 
   // const [initializing, setInitializing] = useState(true);
@@ -42,13 +43,13 @@ const StackNavigations = () => {
   // if (!user) {
   //   return (
   //     <Stack.Navigator>
-  //       <Stack.Screen
-  //         name="SignUpScreen"
-  //         component={SignUpScreen}
+  //       <Stack.Screen 
+  //         name="SignUpScreen" 
+  //         component={SignUpScreen} 
   //         />
-  //         <Stack.Screen
-  //         name="LoginScreen"
-  //         component={LoginScreen}
+  //         <Stack.Screen 
+  //         name="LoginScreen" 
+  //         component={LoginScreen} 
   //         />
   //     </Stack.Navigator>
   //   );
@@ -56,19 +57,23 @@ const StackNavigations = () => {
 
   return (
     <>
-      <StatusBar
-        style="auto"
-        backgroundColor="#370054"
-        barStyle="light-content"
-      />
+    <StatusBar style="auto" backgroundColor="#370054" barStyle="light-content" />
       <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName="DashboardScreen"
-          screenOptions={{
-            headerShown: false,
+        <Stack.Navigator 
+        initialRouteName="DashboardScreen"
+        screenOptions={{
+            headerShown: false
           }}
         >
-          <Stack.Screen name="DashboardScreen" component={DrawerNavigator} />
+          <Stack.Screen 
+          name="DashboardScreen" 
+          component={DashboardScreen}
+          />
+
+<Stack.Screen 
+          name="DrawerNavigator" 
+          component={DrawerNavigator}
+          />
 
           <Stack.Screen
             name="UserProfileScreen"
@@ -78,8 +83,14 @@ const StackNavigations = () => {
             name="EditProfileScreen"
             component={EditProfileScreen}
           />
-          <Stack.Screen name="SignUpScreen" component={SignUpScreen} />
-          <Stack.Screen name="LoginScreen" component={LoginScreen} />
+          <Stack.Screen 
+          name="SignUpScreen" 
+          component={SignUpScreen} 
+          />
+          <Stack.Screen 
+          name="LoginScreen" 
+          component={LoginScreen} 
+          />
           <Stack.Screen
             name="LeaveApplicationScreen"
             component={LeaveApplicationScreen}
@@ -92,7 +103,10 @@ const StackNavigations = () => {
             name="LeavApplicationVPdfScreen"
             component={LeavApplicationVPdfScreen}
           />
-          <Stack.Screen name="AttendenceScreen" component={AttendenceScreen} />
+          <Stack.Screen 
+          name="AttendenceScreen" 
+          component={AttendenceScreen} 
+          />
           <Stack.Screen
             name="RequisitionInputScreen"
             component={RequisitionInputScreen}

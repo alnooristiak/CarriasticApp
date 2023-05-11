@@ -12,7 +12,13 @@ import { Colors } from "../src/theme/colors/colors";
 import UserIconImageLink from "./particles/UserIconImageLink";
 import { useNavigation } from "@react-navigation/native";
 
-const HeaderSection = ({ tittle, Secondtittle, onPress, onPresss }) => {
+const HeaderSection = ({
+  navigation,
+  tittle,
+  Secondtittle,
+  onPress,
+  onPresss,
+}) => {
   const navigation = useNavigation();
   return (
     <>
