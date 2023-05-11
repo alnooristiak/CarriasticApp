@@ -11,6 +11,7 @@ import { Feather } from "@expo/vector-icons";
 import { Colors } from "../src/theme/colors/colors";
 import UserIconImageLink from "./particles/UserIconImageLink";
 import DrawerNavigator from "../src/navigations/DrawerNavigator";
+import MenuIcon from "./particles/MenuIcon";
 
 const HeaderSection = ({
   navigation,
@@ -22,9 +23,10 @@ const HeaderSection = ({
   return (
     <>
       <View style={styles.container}>
-        <TouchableOpacity onPress={onPress}>
+        <TouchableOpacity onPress={() => navigation.openDrawer()}>
           <Feather name="menu" size={35} color="white" />
         </TouchableOpacity>
+        {/* <MenuIcon /> */}
         <Text style={styles.mTittle}>{tittle}</Text>
         {/* <Text style={styles.mTittle}>{Secondtittle}</Text> */}
         <UserIconImageLink onPress={onPresss} />

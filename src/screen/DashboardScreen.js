@@ -12,7 +12,7 @@ const DashboardScreen = ({ navigation }) => {
 
       {/* === header section start === */}
       <HeaderSection 
-      onPress={() => navigation.toggleDrawer(DrawerNavigator)} 
+      // onPress={() => navigation.toggleDrawer(DrawerNavigator)} 
       tittle="Dashboard"
       onPresss={() => navigation.navigate("UserProfileScreen")}
       />

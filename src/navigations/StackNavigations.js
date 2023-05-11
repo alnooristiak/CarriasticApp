@@ -20,6 +20,7 @@ import TaDaBillPdfViewScreen from "../screen/TaDaBillPdfViewScreen";
 import WelcomeLearningPage from "../screen/WelcomeLearningPage";
 import NotificationScreen from "../screen/NotificationScreen";
 import firebase from "firebase/compat";
+import DrawerNavigator from "./DrawerNavigator";
 
 const StackNavigations = () => { 
 
@@ -68,6 +69,12 @@ const StackNavigations = () => {
           name="DashboardScreen" 
           component={DashboardScreen}
           />
+
+<Stack.Screen 
+          name="DrawerNavigator" 
+          component={DrawerNavigator}
+          />
+
           <Stack.Screen
             name="UserProfileScreen"
             component={UserProfileScreen}

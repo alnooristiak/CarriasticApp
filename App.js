@@ -37,7 +37,7 @@ export default function App() {
       {/* === drawer navigation === */}
       {/* <DrawerNavigator /> */}
 
-      {/* <DashboardScreen /> */}
+      {/* <DashboardScreen /> */} 
       {/* <UserProfileScreen /> */}
       {/* <EditProfileScreen /> */}
       {/* <SignUpScreen /> */}
