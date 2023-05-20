@@ -10,16 +10,10 @@ import React from "react";
 import { Feather } from "@expo/vector-icons";
 import { Colors } from "../src/theme/colors/colors";
 import UserIconImageLink from "./particles/UserIconImageLink";
-import DrawerNavigator from "../src/navigations/DrawerNavigator";
-import MenuIcon from "./particles/MenuIcon";
+import { useNavigation } from "@react-navigation/native";
 
-const HeaderSection = ({
-  navigation,
-  tittle,
-  Secondtittle,
-  onPress,
-  onPresss,
-}) => {
+const HeaderSection = ({ tittle, Secondtittle, onPress, onPresss }) => {
+  const navigation = useNavigation();
   return (
     <>
       <View style={styles.container}>

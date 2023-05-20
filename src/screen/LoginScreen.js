@@ -6,7 +6,7 @@ import {
   Text,
   View,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import InputWithIconSec from "../../components/inputs/InputWithIconSec";
 import LogoImage from "../../components/particles/LogoImage";
 import { Colors } from "../theme/colors/colors";
@@ -14,8 +14,24 @@ import ParagrapWithLink from "../../components/particles/ParagrapWithLink";
 import InfoIconLink from "../../components/buttons/InfoIconLink";
 import { LinearGradient } from "expo-linear-gradient";
 // import CheckBox from '@react-native-community/checkbox';
+// import { useNavigation } from '@react-navigation/native';
 
 const LoginScreen = ({ navigation }) => {
+  // user login hendeler 
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  // const navigation = useNavigation();
+
+  const handleSignIn = () => {
+    if (email === 'carriastic@gmail.com' && password === 'password') {
+      navigation.navigate('DashboardScreen');
+    } else {
+      setError('Invalid email or password');
+    }
+  };
+
   return (
     <LinearGradient colors={['#FFFFFF', '#370054',]} style={{height: '100%'}}>
       {/* <View style={styles.conatiner}> */}
@@ -41,12 +57,16 @@ const LoginScreen = ({ navigation }) => {
                 <InputWithIconSec
                   placeholder="Rnter Photo"
                   img={require("../../assets/icons/email_i.png")}
+                  value={email}
+                  onChangeText={setEmail}
                 />
               </View>
               <View style={[styles.inputContainerM, styles.lastInput]}>
                 <InputWithIconSec
                   placeholder="Rnter Photo"
                   img={require("../../assets/icons/lock_i.png")}
+                  value={password}
+                  onChangeText={setPassword}
                 />
               </View>
 
@@ -60,9 +80,16 @@ const LoginScreen = ({ navigation }) => {
                 </View>
               </View>
               <View>
-                <Pressable style={styles.signUpBtn}>
+              {/* LOGIN button  */}
+                <Pressable 
+                onPress={handleSignIn}
+                style={styles.signUpBtn}>
                   <Text style={styles.signUpBtnText}>LOGIN</Text>
                 </Pressable>
+                <View>
+                  {/* LOGIN button error text  */}
+                  <Text style={styles.errorText}>{error}</Text>
+                </View>
                 <Text style={styles.forgotText}>Forgot Password?</Text>
                 <View style={styles.line}></View>
                 <Text style={styles.orText}>OR</Text>
@@ -135,6 +162,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignSelf: "center",
     marginTop: 20,
+  },
+  errorText: {
+    color: 'red',
+    fontWeight: 'bold',
+    fontSize: 18,
+    textAlign: 'center',
+    paddingVertical: 8
   },
   checkboxSection: {
     // justifyContent: 'center',

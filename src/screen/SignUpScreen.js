@@ -1,4 +1,6 @@
 import {
+  Alert,
+  Button,
   Pressable,
   ScrollView,
   StatusBar,
@@ -6,13 +8,47 @@ import {
   Text,
   View,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import LogoImage from "../../components/particles/LogoImage";
 import InputWithIconSec from "../../components/inputs/InputWithIconSec";
 import { Colors } from "../theme/colors/colors";
 import ParagrapWithLink from "../../components/particles/ParagrapWithLink";
 
 const SignUpScreen = ({ navigation }) => {
+
+  const [userName, setUserName] = useState('');
+  const [email, setEmail] = useState('');
+  const [designation, setDesignation] = useState('');
+  const [employeeID, setEmployeeID] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  // const [photo, setPhoto] = useState(null);
+  
+  const handleSignup = () => {
+    if (
+      userName === '' ||
+      email === '' ||
+      designation === '' ||
+      employeeID === '' ||
+      password === '' ||
+      confirmPassword === ''
+    ) {
+      Alert.alert('Error', 'Please fill in all fields');
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      Alert.alert('Error', 'Passwords do not match');
+      return;
+    }
+
+    navigation.navigate('DashboardScreen');
+  };
+
+  // const handlePhotoUpload = () => {
+  //   setPhoto(photoFile);
+  // };
+
   return (
     <ScrollView style={styles.container}>
       <StatusBar
@@ -33,6 +69,8 @@ const SignUpScreen = ({ navigation }) => {
               <InputWithIconSec
                 placeholder="Full Name"
                 img={require("../../assets/icons/user_i.png")}
+                value={userName}
+        onChangeText={text => setUserName(text)}
               />
             </View>
 
@@ -40,6 +78,8 @@ const SignUpScreen = ({ navigation }) => {
               <InputWithIconSec
                 placeholder="Email"
                 img={require("../../assets/icons/user_i.png")}
+                value={email}
+        onChangeText={text => setEmail(text)}
               />
             </View>
 
@@ -47,6 +87,8 @@ const SignUpScreen = ({ navigation }) => {
               <InputWithIconSec
                 placeholder="Designation"
                 img={require("../../assets/icons/user_i.png")}
+                value={designation}
+        onChangeText={text => setDesignation(text)}
               />
             </View>
 
@@ -54,6 +96,8 @@ const SignUpScreen = ({ navigation }) => {
               <InputWithIconSec
                 placeholder="Employee ID"
                 img={require("../../assets/icons/user_i.png")}
+                value={employeeID}
+        onChangeText={text => setEmployeeID(text)}
               />
             </View>
 
@@ -61,6 +105,8 @@ const SignUpScreen = ({ navigation }) => {
               <InputWithIconSec
                 placeholder="Password"
                 img={require("../../assets/icons/user_i.png")}
+                value={password}
+        onChangeText={text => setPassword(text)}
               />
             </View>
 
@@ -68,6 +114,8 @@ const SignUpScreen = ({ navigation }) => {
               <InputWithIconSec
                 placeholder="Confirm Password"
                 img={require("../../assets/icons/user_i.png")}
+                value={confirmPassword}
+        onChangeText={text => setConfirmPassword(text)}
               />
             </View>
 
@@ -76,10 +124,14 @@ const SignUpScreen = ({ navigation }) => {
                 placeholder="Rnter Photo"
                 img={require("../../assets/icons/user_i.png")}
               />
+              {/* <Button 
+              style={styles.photoBtn} 
+              title="Upload Photo" 
+              onPress={handlePhotoUpload} /> */}
             </View>
           </View>
 
-          <Pressable style={styles.signUpBtn}>
+          <Pressable style={styles.signUpBtn} onPress={handleSignup}>
             <Text style={styles.signUpBtnText}>SIGN UP</Text>
           </Pressable>
         </View>
@@ -154,5 +206,18 @@ const styles = StyleSheet.create({
     // marginTop: 27,
     // marginBottom: 18,
     textAlign: "center",
+  },
+  photoBtn: {
+    // flexDirection: "row",
+    // justifyContent: 'center',
+    alignItems: "center",
+    padding: 8,
+    width: "70%",
+    borderWidth: 1,
+    borderColor: "black",
+    borderRadius: 10,
+    backgroundColor: "white",
+    overflow: "hidden",
+    marginBottom: 18,
   },
 });
