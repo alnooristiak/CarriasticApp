@@ -1,20 +1,46 @@
 import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import HeaderSection from "../../components/HeaderSection";
 import BigButton from "../../components/buttons/BigButton";
 import SlimButton from "../../components/buttons/SlimButton";
 import ImageButton from "../../components/buttons/ImageButton";
 import DrawerNavigator from "../navigations/DrawerNavigator";
+import DatePicker from 'react-native-datepicker';
+// import { Alert } from "react-native";
+// import { Button } from "react-native";
 
 const DashboardScreen = ({ navigation }) => {
+  // const [selectedDate, setSelectedDate] = useState('');
+
+  // const handleDateChange = date => {
+  //   setSelectedDate(date);
+  // };
+
+  // const handleShowDatePicker = () => {
+  //   Alert.alert('Selected Date', selectedDate);
+  // };
+
   return (
     <View style={styles.container}>
 
+      {/* date picker start */}
+      {/* <View>
+      <DatePicker
+        date={selectedDate}
+        mode="date"
+        placeholder="Select date"
+        format="YYYY-MM-DD"
+        onDateChange={handleDateChange}
+      />
+      {/* <Button title="Show Date Picker"  /> */}
+    {/* </View> */} 
+      {/* date picker start */}
+
       {/* === header section start === */}
-      <HeaderSection 
-      // onPress={() => navigation.toggleDrawer(DrawerNavigator)} 
-      tittle="Dashboard"
-      onPresss={() => navigation.navigate("UserProfileScreen")}
+      <HeaderSection
+        // onPress={() => navigation.toggleDrawer(DrawerNavigator)}
+        tittle="Dashboard"
+        onPresss={() => navigation.navigate("UserProfileScreen")}
       />
       {/* === header section end ===  */}
 
@@ -30,7 +56,10 @@ const DashboardScreen = ({ navigation }) => {
           <BigButton tittle="Leave Quota" />
         </View>
         <View style={styles.smBtnSection}>
-          <BigButton tittle="Attendence History" />
+          {/* date picker */}
+          <BigButton 
+          // onPress={handleShowDatePicker}
+          tittle="Attendence History" />
           <BigButton
             onPress={() => navigation.navigate("AttendenceScreen")}
             tittle="Attendence"
