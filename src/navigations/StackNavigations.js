@@ -64,19 +64,19 @@ const StackNavigations = () => {
       />
     
       <NavigationContainer>
-      <Stack.Navigator
+      {/* <Stack.Navigator
           initialRouteName="SplaceScreen"
           screenOptions={{
             headerShown: false,
           }}
-        >
+        > */}
 
-        {/* <Stack.Navigator
+        <Stack.Navigator
           initialRouteName="DashboardScreen"
           screenOptions={{
             headerShown: false,
           }}
-        > */}
+        >
 
 <Stack.Screen name="SplaceScreen" component={SplaceScreen} />
           <Stack.Screen name="DashboardScreen" component={DrawerNavigator} />

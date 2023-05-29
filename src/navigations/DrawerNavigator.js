@@ -13,12 +13,14 @@ import RequisitionPdfScreen from "../screen/RequisitionPdfScreen";
 import TaDaBillPdfViewScreen from "../screen/TaDaBillPdfViewScreen";
 import TaDaBillInputScreen from "../screen/TaDaBillInputScreen";
 import TaDaBillConfigScreen from "../screen/TaDaBillConfigScreen";
+import DrawerComponents from "./DrawerComponents";
 
 const DrawerNavigator = () => {
   const Drawer = createDrawerNavigator();
   return (
     <>
       <Drawer.Navigator
+        drawerContent={(props) => <DrawerComponents {...props} />}
         screenOptions={{
           drawerActiveTintColor: "#3A1078",
           headerShown: false,
