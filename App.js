@@ -26,6 +26,7 @@ import WelcomeLearningPage from "./src/screen/WelcomeLearningPage";
 import StackNavigations from "./src/navigations/StackNavigations";
 import DrawerNavigator from './src/navigations/DrawerNavigator';
 import NavigationS from './src/navigations/NavigationS';
+import SplaceScreen from './src/screen/SplaceScreen';
 // import 'react-native-gesture-handler';
 
 export default function App() {
@@ -68,6 +69,7 @@ export default function App() {
       {/* <WelcomeLearningPage /> */}
       
       <StackNavigations />
+      {/* <SplaceScreen /> */}
       {/* <NavigationS /> */}
     </>
   );

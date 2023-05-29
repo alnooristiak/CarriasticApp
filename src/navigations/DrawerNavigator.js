@@ -7,10 +7,12 @@ import DashboardScreen from "../screen/DashboardScreen";
 import LeaveApplicationScreen from "../screen/LeaveApplicationScreen";
 import LeavApplicationVPdfScreen from "../screen/LeavApplicationVPdfScreen";
 import LeaveApplicationSentSceen from "../screen/LeaveApplicationSentSceen";
-
 import RequisitionApiConfigScreen from "../screen/RequisitionApiConfigScreen";
 import RequisitionInputScreen from "../screen/RequisitionInputScreen";
 import RequisitionPdfScreen from "../screen/RequisitionPdfScreen";
+import TaDaBillPdfViewScreen from "../screen/TaDaBillPdfViewScreen";
+import TaDaBillInputScreen from "../screen/TaDaBillInputScreen";
+import TaDaBillConfigScreen from "../screen/TaDaBillConfigScreen";
 
 const DrawerNavigator = () => {
   const Drawer = createDrawerNavigator();
@@ -151,6 +153,19 @@ const DrawerNavigator = () => {
           }}
         />
         {/* Tada Bill End */}
+
+        {/* notifacation Start */}
+        <Drawer.Screen
+          name="NotificationScreen"
+          component={NotificationScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        {/* notifacation End */}
 
         <Drawer.Screen name="Notifications" component={NotificationScreen} />
       </Drawer.Navigator>

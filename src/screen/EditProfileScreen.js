@@ -12,8 +12,7 @@ const EditProfileScreen = ({ navigation }) => {
         <ProfileTopBar 
         tittle="Edit Profilee" 
         linkTittle="Change Photo"
-        onPress={() => navigation.goBack()}
-        onPressed={() => navigation.navigate("EditProfileScreen")} 
+        onPress={() => navigation.goBack()} 
         />
       </View>
       <ScrollView style={styles.inputContainer}>

@@ -21,6 +21,7 @@ import WelcomeLearningPage from "../screen/WelcomeLearningPage";
 import NotificationScreen from "../screen/NotificationScreen";
 import firebase from "firebase/compat";
 import DrawerNavigator from "./DrawerNavigator";
+import SplaceScreen from "../screen/SplaceScreen";
 
 const StackNavigations = () => {
   const Stack = createNativeStackNavigator();
@@ -61,13 +62,23 @@ const StackNavigations = () => {
         backgroundColor="#370054"
         barStyle="light-content"
       />
+    
       <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName="DashboardScreen"
+      <Stack.Navigator
+          initialRouteName="SplaceScreen"
           screenOptions={{
             headerShown: false,
           }}
         >
+
+        {/* <Stack.Navigator
+          initialRouteName="DashboardScreen"
+          screenOptions={{
+            headerShown: false,
+          }}
+        > */}
+
+<Stack.Screen name="SplaceScreen" component={SplaceScreen} />
           <Stack.Screen name="DashboardScreen" component={DrawerNavigator} />
 
           <Stack.Screen
