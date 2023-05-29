@@ -20,7 +20,7 @@ const DrawerNavigator = () => {
   return (
     <>
       <Drawer.Navigator
-        drawerContent={(props) => <DrawerComponents {...props} />}
+        drawerContent={props => <DrawerComponents {...props} />}
         screenOptions={{
           drawerActiveTintColor: "#3A1078",
           headerShown: false,
@@ -29,6 +29,7 @@ const DrawerNavigator = () => {
             fontWeight: 700,
             marginLeft: -10,
             color: "purple",
+            backgroundColor: '#1E1E1E'
           },
         }}
         initialRouteName="Dashboard"
@@ -169,7 +170,7 @@ const DrawerNavigator = () => {
         />
         {/* notifacation End */}
 
-        <Drawer.Screen name="Notifications" component={NotificationScreen} />
+        {/* <Drawer.Screen name="Notifications" component={NotificationScreen} /> */}
       </Drawer.Navigator>
     </>
   );
