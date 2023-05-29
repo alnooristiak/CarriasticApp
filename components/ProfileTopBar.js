@@ -32,7 +32,10 @@ const ProfileTopBar = ({
           style={styles.imageStyle}
           source={require("../assets/images/user_big.png")}
         />
-        <TouchableOpacity style={styles.editLink} onPress={onPressed}>
+        <TouchableOpacity 
+        style={styles.editLink} 
+        onPress={onPressed}
+        >
           <Feather
             style={[styles.linkTextStyle, styles.linkIcon]}
             name="edit"
@@ -70,7 +73,8 @@ const styles = StyleSheet.create({
     color: Colors.white,
     fontWeight: 400,
     fontSize: 30,
-    marginLeft: '30%',
+    marginLeft: '20%',
+    // textAlign: 'center',
     alignItems: 'center'
   },
   imageStyle: {
@@ -79,17 +83,21 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     zIndex: 1,
     alignSelf: "center",
-    width: 165,
+    width: 150,
     height: 165,
   },
   userImageContainer: {},
   editLink: {
     flexDirection: "row",
+    position: "relative",
+    top: '38%',
+    justifyContent: "flex-end",
+    paddingRight: 5
   },
   linkTextStyle: {
     position: "relative",
-    top: '38%',
-    right: -275,
+    // top: '38%',
+    // right: -275,
     color: Colors.black,
     fontWeight: 400,
     fontSize: 13,

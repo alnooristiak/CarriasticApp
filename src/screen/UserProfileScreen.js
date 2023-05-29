@@ -10,7 +10,7 @@ const UserProfileScreen = ({ navigation }) => {
       <View>
         <ProfileTopBar
           onPress={() => navigation.goBack()}
-          tittle="test name"
+          tittle="User Profile"
           linkTittle="Edit Profile"
           onPressed={() => navigation.navigate("EditProfileScreen")}
         />

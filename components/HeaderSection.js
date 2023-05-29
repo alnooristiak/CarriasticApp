@@ -45,6 +45,6 @@ const styles = StyleSheet.create({
   mTittle: {
     color: Colors.white,
     fontWeight: "bold",
-    fontSize: 30,
+    fontSize: 25,
   },
 });

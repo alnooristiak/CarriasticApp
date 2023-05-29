@@ -4,13 +4,18 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import AttendenceScreen from "../screen/AttendenceScreen";
 import NotificationScreen from "../screen/NotificationScreen";
 import DashboardScreen from "../screen/DashboardScreen";
-// import { NavigationContainer } from "@react-navigation/native";
+import LeaveApplicationScreen from "../screen/LeaveApplicationScreen";
+import LeavApplicationVPdfScreen from "../screen/LeavApplicationVPdfScreen";
+import LeaveApplicationSentSceen from "../screen/LeaveApplicationSentSceen";
+
+import RequisitionApiConfigScreen from "../screen/RequisitionApiConfigScreen";
+import RequisitionInputScreen from "../screen/RequisitionInputScreen";
+import RequisitionPdfScreen from "../screen/RequisitionPdfScreen";
 
 const DrawerNavigator = () => {
   const Drawer = createDrawerNavigator();
   return (
     <>
-      {/* <NavigationContainer> */}
       <Drawer.Navigator
         screenOptions={{
           drawerActiveTintColor: "#3A1078",
@@ -34,6 +39,119 @@ const DrawerNavigator = () => {
             drawerIcon: () => null,
           }}
         />
+
+        {/* Attendence Start */}
+        <Drawer.Screen
+          name="AttendenceScreen"
+          component={AttendenceScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        {/* Attendence End */}
+
+        {/* Leave Application Start */}
+        <Drawer.Screen
+          name="LeavApplicationVPdfScreen"
+          component={LeavApplicationVPdfScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        <Drawer.Screen
+          name="LeaveApplicationScreen"
+          component={LeaveApplicationScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        <Drawer.Screen
+          name="LeaveApplicationSentSceen"
+          component={LeaveApplicationSentSceen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        {/* Leave Application End */}
+
+        {/* Requisition Start */}
+        <Drawer.Screen
+          name="RequisitionApiConfigScreen"
+          component={RequisitionApiConfigScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        <Drawer.Screen
+          name="RequisitionInputScreen"
+          component={RequisitionInputScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        <Drawer.Screen
+          name="RequisitionPdfScreen"
+          component={RequisitionPdfScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        {/* Requisition End */}
+
+        {/* Tada Bill Start */}
+        <Drawer.Screen
+          name="TaDaBillConfigScreen"
+          component={TaDaBillConfigScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        <Drawer.Screen
+          name="TaDaBillInputScreen"
+          component={TaDaBillInputScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        <Drawer.Screen
+          name="TaDaBillPdfViewScreen"
+          component={TaDaBillPdfViewScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        {/* Tada Bill End */}
+
         <Drawer.Screen name="Notifications" component={NotificationScreen} />
       </Drawer.Navigator>
     </>

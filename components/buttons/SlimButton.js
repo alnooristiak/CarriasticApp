@@ -15,7 +15,7 @@ export default SlimButton;
 const styles = StyleSheet.create({
   buttonStyle: {
     width: 145,
-    height: "45%",
+    height: 30,
     borderRadius: 7,
     backgroundColor: Colors.purple_dark,
     justifyContent: "center",

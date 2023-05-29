@@ -5,11 +5,16 @@ import SimpleInputSec from "../../components/inputs/SimpleInputSec";
 import SlimButton from "../../components/buttons/SlimButton";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 
-const EditProfileScreen = () => {
+const EditProfileScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View>
-        <ProfileTopBar tittle="Edit Profilee" linkTittle="Change Photo" />
+        <ProfileTopBar 
+        tittle="Edit Profilee" 
+        linkTittle="Change Photo"
+        onPress={() => navigation.goBack()}
+        onPressed={() => navigation.navigate("EditProfileScreen")} 
+        />
       </View>
       <ScrollView style={styles.inputContainer}>
         <SimpleInputSec lable="Email ID" placeholder="rafid@carriastic.com" />
@@ -52,14 +57,14 @@ export default EditProfileScreen;
 const styles = StyleSheet.create({
   container: {},
   inputContainer: {
-    marginTop: 115,
+    marginTop: 90,
   },
   slimBtnContainer: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: '10%',
+    marginTop: '3%',
   },
   homeIconBtn: {
-    marginTop: '27%',
+    marginTop: '3%',
   },
 });
