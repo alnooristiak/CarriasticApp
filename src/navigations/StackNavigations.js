@@ -51,6 +51,7 @@ const StackNavigations = () => {
           <Stack.Screen name="DashboardScreen" component={DashboardScreen} />
 
           <Stack.Screen name="SplaceScreen" component={SplaceScreen} />
+
           <Stack.Screen name="DrawerNavigator" component={DrawerNavigator} />
 
           <Stack.Screen

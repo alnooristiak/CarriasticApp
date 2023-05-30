@@ -14,9 +14,11 @@ import TaDaBillPdfViewScreen from "../screen/TaDaBillPdfViewScreen";
 import TaDaBillInputScreen from "../screen/TaDaBillInputScreen";
 import TaDaBillConfigScreen from "../screen/TaDaBillConfigScreen";
 import DrawerComponents from "./DrawerComponents";
+import { useNavigation } from "@react-navigation/native";
 
 const DrawerNavigator = () => {
   const Drawer = createDrawerNavigator();
+  const navigation = useNavigation();
   return (
     <>
       <Drawer.Navigator
@@ -32,10 +34,10 @@ const DrawerNavigator = () => {
             backgroundColor: '#1E1E1E'
           },
         }}
-        initialRouteName="Dashboard"
+        initialRouteName="DashboardScreen"
       >
         <Drawer.Screen
-          name="Dashboard"
+          name="DashboardScreen"
           component={DashboardScreen}
           options={{
             drawerLabel: () => null,
