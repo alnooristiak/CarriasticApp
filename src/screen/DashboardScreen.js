@@ -45,7 +45,10 @@ const DashboardScreen = ({ navigation }) => {
             onPress={() => navigation.navigate("LeaveApplicationScreen")}
             tittle="Leave Application"
           />
-          <BigButton tittle="Leave Quota" />
+          <BigButton 
+          onPress={() => navigation.navigate("LeaveQuotaScreen")}
+          tittle="Leave Quota" 
+          />
         </View>
         <View style={styles.smBtnSection}>
           

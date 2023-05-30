@@ -22,6 +22,7 @@ import NotificationScreen from "../screen/NotificationScreen";
 import firebase from "firebase/compat";
 import DrawerNavigator from "./DrawerNavigator";
 import SplaceScreen from "../screen/SplaceScreen";
+import LeaveQuotaScreen from "../screen/LeaveQuotaScreen";
 
 const StackNavigations = () => {
   const Stack = createNativeStackNavigator();
@@ -108,6 +109,10 @@ const StackNavigations = () => {
           <Stack.Screen
             name="WelcomeLearningPage"
             component={WelcomeLearningPage}
+          />
+          <Stack.Screen
+            name="LeaveQuotaScreen"
+            component={LeaveQuotaScreen}
           />
         </Stack.Navigator>
       </NavigationContainer>
