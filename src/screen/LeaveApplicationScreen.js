@@ -10,7 +10,7 @@ const LeaveApplicationScreen = ({ navigation }) => {
     <View style={styles.container}>
       <HeaderSection
         onPresss={() => navigation.navigate("EditProfileScreen")}
-        tittle="Leave Application"
+        tittle="Leave Applicatioon"
       />
       <View style={styles.fromContainer}>
         <InputDateButton
@@ -41,7 +41,7 @@ const LeaveApplicationScreen = ({ navigation }) => {
         <InputDateButton tittle="Enter Your Password" />
 
         <View style={{ marginTop: 30 }}>
-          <CommonButton tittle="SUBMIT" />
+          <CommonButton onPress={() => navigation.navigate("LeaveApplicationSentSceen")} tittle="SUBMIT" />
         </View>
       </View>
     </View>

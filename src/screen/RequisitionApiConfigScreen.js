@@ -6,7 +6,7 @@ import CommonButton from "../../components/buttons/CommonButton";
 import { Colors } from "../theme/colors/colors";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 
-const RequisitionApiConfigScreen = () => {
+const RequisitionApiConfigScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <HeaderSection tittle="Requisition" />
@@ -21,7 +21,7 @@ const RequisitionApiConfigScreen = () => {
       </View>
 
       <View>
-        <CommonButton tittle="View PDF" />
+        <CommonButton onPress={() => navigation.navigate("RequisitionPdfScreen")} tittle="View PDF" />
       </View>
 
       <View style={styles.homeLink}>

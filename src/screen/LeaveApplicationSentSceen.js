@@ -21,7 +21,7 @@ const LeaveApplicationSentSceen = ({navigation}) => {
       </View>
 
       <View>
-        <CommonButton tittle="View PDF" />
+        <CommonButton onPress={() => navigation.navigate("LeavApplicationVPdfScreen")} tittle="View PDF" />
       </View>
 
       <View style={styles.homeLink}>

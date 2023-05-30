@@ -6,7 +6,7 @@ import CommonButton from "../../components/buttons/CommonButton";
 import { Colors } from "../theme/colors/colors";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 
-const TaDaBillConfigScreen = () => {
+const TaDaBillConfigScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <HeaderSection tittle="TA DA Bill" />
@@ -21,7 +21,7 @@ const TaDaBillConfigScreen = () => {
       </View>
 
       <View>
-        <CommonButton tittle="View PDF" />
+        <CommonButton onPress={() => navigation.navigate("TaDaBillPdfViewScreen")}  tittle="View PDF" />
       </View>
 
       <View style={styles.homeLink}>

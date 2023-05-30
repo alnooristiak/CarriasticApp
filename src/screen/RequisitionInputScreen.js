@@ -23,7 +23,7 @@ const RequisitionInputScreen = ({ navigation }) => {
         <InputDateButton tittle="Quantity" />
 
         <View style={{ marginTop: 30 }}>
-          <CommonButton tittle="SUBMIT" />
+          <CommonButton onPress={() => navigation.navigate("RequisitionApiConfigScreen")} tittle="SUBMIT" />
         </View>
 
         <View style={{ marginVertical: "30%" }}>

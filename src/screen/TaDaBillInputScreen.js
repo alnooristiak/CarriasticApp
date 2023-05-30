@@ -25,7 +25,7 @@ const TaDaBillInputScreen = ({ navigation }) => {
         <InputDateButton tittle="Amount" />
 
         <View style={{ marginTop: 30 }}>
-          <CommonButton tittle="SUBMIT" />
+          <CommonButton onPress={() => navigation.navigate("TaDaBillConfigScreen")}  tittle="SUBMIT" />
         </View>
 
         <View style={{ marginVertical: "10%" }}>
