@@ -23,7 +23,7 @@ const HeaderSection = ({ tittle, Secondtittle, onPress, onPresss }) => {
         {/* <MenuIcon /> */}
         <Text style={styles.mTittle}>{tittle}</Text>
         {/* <Text style={styles.mTittle}>{Secondtittle}</Text> */}
-        <UserIconImageLink onPress={() => navigation.navigate("EditProfileScreen")} />
+        <UserIconImageLink onPress={() => navigation.navigate("UserProfileScreen")} />
       </View>
     </>
   );

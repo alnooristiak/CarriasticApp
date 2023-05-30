@@ -13,6 +13,7 @@ import { Colors } from "../theme/colors/colors";
 import ParagrapWithLink from "../../components/particles/ParagrapWithLink";
 import InfoIconLink from "../../components/buttons/InfoIconLink";
 import { LinearGradient } from "expo-linear-gradient";
+// import { useNavigation } from "@react-navigation/native";
 // import CheckBox from '@react-native-community/checkbox';
 // import { useNavigation } from '@react-navigation/native';
 
@@ -25,6 +26,8 @@ const LoginScreen = ({ navigation }) => {
   // const navigation = useNavigation();
 
   const handleSignIn = () => {
+    // const navigation = useNavigation();
+  
     if (email === 'carriastic@gmail.com' && password === 'password') {
       navigation.navigate('DashboardScreen');
     } else {

@@ -28,7 +28,6 @@ const RequisitionInputScreen = ({ navigation }) => {
 
         <View style={{ marginVertical: "30%" }}>
           <HomeIconButton
-            onPress={() => navigation.navigate("DashboardScreen")}
             img={require("../../assets/icons/small_homeIcon.png")}
           />
         </View>

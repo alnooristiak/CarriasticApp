@@ -5,7 +5,10 @@ import { useNavigation } from "@react-navigation/native";
 const HomeIconButton = ({ img }) => {
   const navigation = useNavigation();
   return (
-    <TouchableOpacity style={styles.homeBtnContainer} onPress={() => navigation.navigate("DashboardScreen")}>
+    <TouchableOpacity 
+    style={styles.homeBtnContainer} 
+    onPress={() => navigation.navigate("DashboardScreen")}
+    >
       <Image source={img} />
     </TouchableOpacity>
   );

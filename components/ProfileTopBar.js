@@ -8,7 +8,7 @@ const ProfileTopBar = ({
   onPress,
   tittle,
   linkTittle,
-  navigation,
+  // navigation,
   onPressed,
 }) => {
   return (

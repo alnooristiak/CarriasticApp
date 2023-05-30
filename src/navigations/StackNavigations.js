@@ -26,35 +26,6 @@ import SplaceScreen from "../screen/SplaceScreen";
 const StackNavigations = () => {
   const Stack = createNativeStackNavigator();
 
-  // const [initializing, setInitializing] = useState(true);
-  // const [user, setUser] = useState();
-
-  // function AuthStateChangeUser (user) {
-  //   setUser(user);
-  //   if(initializing) setInitializing(false);
-  // }
-  // useEffect(() => {
-  //   const subscriber = firebase.auth().onAuthStateChanged(onAuthStateChanged);
-  //   return subscriber;
-  // }, []);
-
-  // if (initializing) return null;
-
-  // if (!user) {
-  //   return (
-  //     <Stack.Navigator>
-  //       <Stack.Screen
-  //         name="SignUpScreen"
-  //         component={SignUpScreen}
-  //         />
-  //         <Stack.Screen
-  //         name="LoginScreen"
-  //         component={LoginScreen}
-  //         />
-  //     </Stack.Navigator>
-  //   );
-  // }
-
   return (
     <>
       <StatusBar
@@ -62,9 +33,9 @@ const StackNavigations = () => {
         backgroundColor="#370054"
         barStyle="light-content"
       />
-    
+
       <NavigationContainer>
-      {/* <Stack.Navigator
+        {/* <Stack.Navigator
           initialRouteName="SplaceScreen"
           screenOptions={{
             headerShown: false,
@@ -77,9 +48,10 @@ const StackNavigations = () => {
             headerShown: false,
           }}
         >
+          <Stack.Screen name="DashboardScreen" component={DashboardScreen} />
 
-<Stack.Screen name="SplaceScreen" component={SplaceScreen} />
-          <Stack.Screen name="DashboardScreen" component={DrawerNavigator} />
+          <Stack.Screen name="SplaceScreen" component={SplaceScreen} />
+          <Stack.Screen name="DrawerNavigator" component={DrawerNavigator} />
 
           <Stack.Screen
             name="UserProfileScreen"

@@ -4,8 +4,10 @@ import HeaderSection from "../../components/HeaderSection";
 import FatButton from "../../components/buttons/FatButton";
 import HomeIconButton from "../../components/buttons/HomeIconButton";
 import { Colors } from "../theme/colors/colors";
+import { useNavigation } from "@react-navigation/native";
 
-const AttendenceScreen = ({ navigation }) => {
+const AttendenceScreen = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <HeaderSection tittle="Attendance" />
@@ -21,7 +23,6 @@ const AttendenceScreen = ({ navigation }) => {
 
       <View style={styles.homeLink}>
         <HomeIconButton
-        onPress={() => navigation.navigate("DashboardScreen")}
         img={require("../../assets/icons/homeIcon.png")} />
       </View>
     </View>

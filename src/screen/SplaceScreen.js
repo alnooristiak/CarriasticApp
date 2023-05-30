@@ -1,14 +1,15 @@
 import { Image, StyleSheet, Text, View } from "react-native";
 import React, { useEffect } from "react";
 import { Colors } from "../theme/colors/colors";
+import { useNavigation } from "@react-navigation/native";
 // import React, { useEffect } from 'react';
 
-const SplaceScreen = ({ navigation }) => {
-
+const SplaceScreen = () => {
+  const navigation = useNavigation();
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('Home');
-    }, 3000);
+      navigation.navigate('LoginScreen');
+    }, 2000);
   }, [navigation]);
 
   return (

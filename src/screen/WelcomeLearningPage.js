@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
   },
   inputSec: {
-    width: 360,
+    width: '95%',
     height: 50,
     backgroundColor: Colors.white,
     borderWidth: 1,
@@ -121,6 +121,5 @@ const styles = StyleSheet.create({
     color: Colors.purple_light,
     fontWeight: 400,
     fontSize: 28,
-    fontFamily: typography.primary,
   },
 });
