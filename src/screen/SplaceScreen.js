@@ -8,7 +8,7 @@ const SplaceScreen = () => {
   const navigation = useNavigation();
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('LoginScreen');
+      navigation.navigate('WelcomeLearningPage');
     }, 2000);
   }, [navigation]);
 
