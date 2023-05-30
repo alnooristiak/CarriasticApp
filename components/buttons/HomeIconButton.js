@@ -1,9 +1,11 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
-const HomeIconButton = ({ onPress, img }) => {
+const HomeIconButton = ({ img }) => {
+  const navigation = useNavigation();
   return (
-    <TouchableOpacity style={styles.homeBtnContainer} onPress={onPress}>
+    <TouchableOpacity style={styles.homeBtnContainer} onPress={() => navigation.navigate("DashboardScreen")}>
       <Image source={img} />
     </TouchableOpacity>
   );
