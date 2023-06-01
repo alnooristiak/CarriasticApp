@@ -24,6 +24,7 @@ import DrawerNavigator from "./DrawerNavigator";
 import SplaceScreen from "../screen/SplaceScreen";
 import LeaveQuotaScreen from "../screen/LeaveQuotaScreen";
 import AboutUsScreen from "../screen/AboutUsScreen";
+import MissionScreen from "../screen/MissionScreen";
 
 const StackNavigations = () => {
   const Stack = createNativeStackNavigator();
@@ -51,6 +52,8 @@ const StackNavigations = () => {
           }}
         >
           <Stack.Screen name="DashboardScreen" component={DashboardScreen} />
+
+          <Stack.Screen name="MissionScreen" component={MissionScreen} />
 
           <Stack.Screen name="SplaceScreen" component={SplaceScreen} />
 

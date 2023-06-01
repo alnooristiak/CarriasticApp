@@ -94,7 +94,7 @@ const DashboardScreen = ({ navigation }) => {
 
           <BigButton
             // onPress={() => navigation.navigate("AttendenceScreen")}
-            onPress={() => navigation.navigate("AboutUsScreen")}
+            onPress={() => navigation.navigate("MissionScreen")}
             tittle="Attendence"
           />
         </View>
