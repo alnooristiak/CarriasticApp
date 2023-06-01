@@ -25,6 +25,7 @@ import SplaceScreen from "../screen/SplaceScreen";
 import LeaveQuotaScreen from "../screen/LeaveQuotaScreen";
 import AboutUsScreen from "../screen/AboutUsScreen";
 import MissionScreen from "../screen/MissionScreen";
+import VisionScreen from "../screen/VisionScreen";
 
 const StackNavigations = () => {
   const Stack = createNativeStackNavigator();
@@ -55,9 +56,11 @@ const StackNavigations = () => {
 
           <Stack.Screen name="MissionScreen" component={MissionScreen} />
 
-          <Stack.Screen name="SplaceScreen" component={SplaceScreen} />
-
           <Stack.Screen name="AboutUsScreen" component={AboutUsScreen} />
+
+          <Stack.Screen name="VisionScreen" component={VisionScreen} />
+
+          <Stack.Screen name="SplaceScreen" component={SplaceScreen} />
 
           <Stack.Screen name="DrawerNavigator" component={DrawerNavigator} />
 
