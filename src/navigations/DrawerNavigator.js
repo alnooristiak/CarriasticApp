@@ -14,15 +14,16 @@ import TaDaBillPdfViewScreen from "../screen/TaDaBillPdfViewScreen";
 import TaDaBillInputScreen from "../screen/TaDaBillInputScreen";
 import TaDaBillConfigScreen from "../screen/TaDaBillConfigScreen";
 import DrawerComponents from "./DrawerComponents";
-import { useNavigation } from "@react-navigation/native";
+import AboutUsScreen from "../screen/AboutUsScreen";
+// import { useNavigation } from "@react-navigation/native";
 
 const DrawerNavigator = () => {
   const Drawer = createDrawerNavigator();
-  const navigation = useNavigation();
+  // const navigation = useNavigation();
   return (
     <>
       <Drawer.Navigator
-        drawerContent={props => <DrawerComponents {...props} />}
+        drawerContent={(props) => <DrawerComponents {...props} />}
         screenOptions={{
           drawerActiveTintColor: "#3A1078",
           headerShown: false,
@@ -171,6 +172,18 @@ const DrawerNavigator = () => {
           }}
         />
         {/* notifacation End */}
+
+        {/* about and drawer navigations */}
+        <Drawer.Screen
+          name="AboutUsScreen"
+          component={AboutUsScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
 
         {/* <Drawer.Screen name="Notifications" component={NotificationScreen} /> */}
       </Drawer.Navigator>

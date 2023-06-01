@@ -93,7 +93,8 @@ const DashboardScreen = ({ navigation }) => {
           {/* date picker model end */}
 
           <BigButton
-            onPress={() => navigation.navigate("AttendenceScreen")}
+            // onPress={() => navigation.navigate("AttendenceScreen")}
+            onPress={() => navigation.navigate("AboutUsScreen")}
             tittle="Attendence"
           />
         </View>

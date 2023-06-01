@@ -23,6 +23,7 @@ import firebase from "firebase/compat";
 import DrawerNavigator from "./DrawerNavigator";
 import SplaceScreen from "../screen/SplaceScreen";
 import LeaveQuotaScreen from "../screen/LeaveQuotaScreen";
+import AboutUsScreen from "../screen/AboutUsScreen";
 
 const StackNavigations = () => {
   const Stack = createNativeStackNavigator();
@@ -52,6 +53,8 @@ const StackNavigations = () => {
           <Stack.Screen name="DashboardScreen" component={DashboardScreen} />
 
           <Stack.Screen name="SplaceScreen" component={SplaceScreen} />
+
+          <Stack.Screen name="AboutUsScreen" component={AboutUsScreen} />
 
           <Stack.Screen name="DrawerNavigator" component={DrawerNavigator} />
 

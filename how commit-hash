@@ -1,0 +1,257 @@
+[33mcommit 5493fbd86cf79feb3af298f308b2356c8fc30877[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Wed May 31 00:37:49 2023 +0600
+
+    linking splace screen to welcome screen
+
+[33mcommit a8e467fa10b2e63525fa9238ae94ff503082c81c[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Wed May 31 00:27:23 2023 +0600
+
+    set navigation screen set
+
+[33mcommit 2b3a0413822e9f2d1593155d3408e06b87f4dedf[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Wed May 31 00:02:09 2023 +0600
+
+    adding leave quota screen
+
+[33mcommit b0e4297d89e4b069bf928f45a2055add3c6c9c6b[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Tue May 30 22:25:17 2023 +0600
+
+    adding react native modern date picker
+
+[33mcommit 9ca5683388b571b88b3d51add7d59bda9e12cf8c[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Tue May 30 17:40:42 2023 +0600
+
+    adding and linking editing
+
+[33mcommit c40b97e28e831b4e80b3e28e3617eb40176ade58[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Tue May 30 15:51:47 2023 +0600
+
+    finish drawer navigation
+
+[33mcommit 5443ed1d8d367f318785f7f1ebc23b3306013726[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Tue May 30 02:31:24 2023 +0600
+
+    adding drawer navigation
+
+[33mcommit 3fb1f390c82382fd90135a8bfcab07594a177904[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Tue May 30 00:04:44 2023 +0600
+
+    fixing dashboard error
+
+[33mcommit 1aba374128a974aff02604f34f2b4e3b047d18e2[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Mon May 29 22:08:41 2023 +0600
+
+    adding splace screen
+
+[33mcommit 0e23b0a92b6cb185b0f1f91918d8598b57b7e06d[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Mon May 29 21:33:19 2023 +0600
+
+    adding & editing navigation and Profile edit and user profile screen
+
+[33mcommit c6982abced77c367faa1e50a76c161b711ec8074[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sun May 21 00:20:43 2023 +0600
+
+    handeling date picker
+
+[33mcommit f1785520b998b6c84d61b07eeb925a881b662015[m
+Merge: fd7f097 29b9699
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat May 20 22:38:31 2023 +0600
+
+    Merge branch 'main' of https://github.com/alnooristiak/TaDaBill_RN
+
+[33mcommit fd7f09711aa75be45bfa70b65353c990e2323419[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat May 20 22:33:03 2023 +0600
+
+    hendeling login and sign in screen in user
+
+[33mcommit 29b96993b8984e2732eccd18a38194d92f327679[m
+Merge: 59e59ee 714d5c3
+Author: Al Noor Istiak Mahmud <86672651+alnooristiak@users.noreply.github.com>
+Date:   Thu May 11 22:39:43 2023 +0600
+
+    Merge pull request #2 from kenyi-mic/main
+    
+    drawer navaigator
+
+[33mcommit 714d5c3ec1c94f1a846e46fa899b9db1c07f4638[m
+Author: Michael Kenyi <michaelkenyi13@gmail.com>
+Date:   Thu May 11 09:18:03 2023 -0700
+
+    drawer navaigator
+
+[33mcommit 59e59ee044f0db433f4c30e23ddc90a5a24597e7[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Thu May 11 21:28:44 2023 +0600
+
+    test
+
+[33mcommit 169b3064310ecf6784c002329d7f4171e46e6fb2[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Mon May 8 21:47:08 2023 +0600
+
+    responsive ness
+
+[33mcommit 7f926c795274adc803f8e661b37b75ffde299e78[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Thu May 4 20:37:30 2023 +0600
+
+    fix sum issus
+
+[33mcommit 0fdcb29b1215457211b0beeb391f5aa21e55644f[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Thu May 4 00:17:07 2023 +0600
+
+    fixing all files code
+
+[33mcommit 2d6cf20aa021142c4aa23592b99d3293b4df801b[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Wed May 3 21:04:08 2023 +0600
+
+    linking screens
+
+[33mcommit e34a56c11b35a6cf2e90d4e7b0af48f013ca058f[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Fri Apr 28 22:47:30 2023 +0600
+
+    adding firebase config code add
+
+[33mcommit 6f940d1a1d804f7111b6faaa2694983d08e69fba[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Wed Apr 26 23:19:56 2023 +0600
+
+    adding lenear gradeant in sign in screen
+
+[33mcommit 766611a81706829114866f048a62459b01235ce1[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Tue Apr 18 21:11:49 2023 +0600
+
+    test RN Drawer Navigation
+
+[33mcommit e986d30e0914057f2743177eb45cd6fc475a4971[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 15 02:05:35 2023 +0600
+
+    test drawer navigation
+
+[33mcommit a4a819fad4276ac764775c1ed82311e72480c822[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Thu Apr 13 01:58:41 2023 +0600
+
+    editing status bar
+
+[33mcommit c1a45c844c15db92acb8d2bf8c1b985f39b1337e[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Wed Apr 12 03:08:15 2023 +0600
+
+    linking the pages
+
+[33mcommit bbcf44e77b58ebd55c658b717c70c9eb4fa500e0[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Wed Apr 12 01:54:57 2023 +0600
+
+    adding react native navigation and creating stack navigation screen
+
+[33mcommit 69b906a333d9ddc002d6ac4666b584c3ecac7e17[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Tue Apr 11 00:41:05 2023 +0600
+
+    notification and attendence screen dynamic bg color added
+
+[33mcommit 42f0288eeb164d3987d0b4148e49dcfabdd06536[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Tue Apr 11 00:24:55 2023 +0600
+
+    creating welcome screen
+
+[33mcommit 232828a4d31fddc3d90cea0e963de1ebb9c0fef9[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sun Apr 9 00:07:43 2023 +0600
+
+    create welcome screen file
+
+[33mcommit ea67a8232e35933dfeb9d6e144f2e310ff250509[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 8 03:24:26 2023 +0600
+
+    creating notification screen
+
+[33mcommit 53b8d39ec1645cf0292b2c62167e3f47b30eacc8[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 8 03:05:44 2023 +0600
+
+    creating ta da bill confirm screen
+
+[33mcommit 701204763de96896203b4f12caa6c00116021640[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 8 03:03:05 2023 +0600
+
+    creating ta da bill pdf view screen
+
+[33mcommit 70d42a875df2d9862c1a505fb0720cea258e8347[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 8 02:59:26 2023 +0600
+
+    creating ta da bill input screen
+
+[33mcommit dd1f0898556b69ea31c1ba4c88681eb87fc94cbf[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 8 02:50:39 2023 +0600
+
+    creating req api config screen
+
+[33mcommit c4d5bee632938367203d581d2417685b264cc82e[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 8 02:34:06 2023 +0600
+
+    creating requisition pdf view page
+
+[33mcommit 444a1062a6f8f9d95aeef2ec13f5dfdf49c5c2a3[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 8 02:26:39 2023 +0600
+
+    creating attendance screen
+
+[33mcommit c9da5b3ad8a4d4121b6a19f41bb1a636e68b0f36[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 8 00:53:57 2023 +0600
+
+    creating leave application set popup screen
+
+[33mcommit 9e5ff347cc5c80676f01fe205852604c411aabcb[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Sat Apr 8 00:06:09 2023 +0600
+
+    creating leave Application Screen
+
+[33mcommit 435ab660135382d9355dc1ac0c40563894fe869d[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Fri Apr 7 23:13:20 2023 +0600
+
+    creating login screen
+
+[33mcommit 49fef626d52aba1912606e556a9b72f67dc47535[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Fri Apr 7 03:25:47 2023 +0600
+
+    creating login screen
+
+[33mcommit cd0be101ba669f3900b9a44df3d0ae4aabd2d5ac[m
+Author: Al Noor Istiak Mahmud <istiakmahmud1010@gmail.com>
+Date:   Fri Apr 7 01:42:29 2023 +0600
+
+    adding Sign up screen and there Component
+
+[33mcommit 
