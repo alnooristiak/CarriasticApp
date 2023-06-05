@@ -80,7 +80,7 @@ const ContactUsScreen = () => {
     <View>
       <HeaderSection
         // onPress={() => navigation.navigate("UserProfileScreen")}
-        tittle="Vision"
+        tittle="Contact"
       />
 
       <View style={styles.container}>

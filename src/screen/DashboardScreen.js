@@ -9,6 +9,7 @@ import DatePicker from "react-native-modern-datepicker";
 import { set } from "react-native-reanimated";
 import { getFormatedDate, getToday } from "react-native-modern-datepicker";
 import { Colors } from "../theme/colors/colors";
+import 'react-native-gesture-handler';
 
 const DashboardScreen = ({ navigation }) => {
 
@@ -31,7 +32,7 @@ const DashboardScreen = ({ navigation }) => {
 
       {/* === header section start === */}
       <HeaderSection
-        // onPress={() => navigation.navigate("UserProfileScreen")}
+        onPress={() => navigation.openDrawer()}
         tittle="Dashboard"
       />
       {/* === header section end ===  */}
@@ -93,8 +94,7 @@ const DashboardScreen = ({ navigation }) => {
           {/* date picker model end */}
 
           <BigButton
-            // onPress={() => navigation.navigate("AttendenceScreen")}
-            onPress={() => navigation.navigate("ContactUsScreen")}
+            onPress={() => navigation.navigate("AttendenceScreen")}
             tittle="Attendence"
           />
         </View>
@@ -120,7 +120,10 @@ const DashboardScreen = ({ navigation }) => {
         </View>
         <View style={styles.smBtnSection}>
           <BigButton tittle="Events" />
-          <BigButton tittle="Contacts" />
+          <BigButton 
+          onPress={() => navigation.navigate("ContactUsScreen")}
+          tittle="Contacts" 
+          />
         </View>
       </View>
       {/* === big button section end ===  */}

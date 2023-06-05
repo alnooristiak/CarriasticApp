@@ -174,6 +174,7 @@ const DrawerNavigator = () => {
         {/* notifacation End */}
 
         {/* about and drawer navigations */}
+        {/* drawer link navigation start  */}
         <Drawer.Screen
           name="AboutUsScreen"
           component={AboutUsScreen}
@@ -184,8 +185,39 @@ const DrawerNavigator = () => {
             drawerIcon: () => null,
           }}
         />
+        <Drawer.Screen
+          name="ContactUsScreen"
+          component={ContactUsScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        <Drawer.Screen
+          name="MissionScreen"
+          component={MissionScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        <Drawer.Screen
+          name="VisionScreen"
+          component={VisionScreen}
+          options={{
+            drawerLabel: () => null,
+            drawerItemStyle: { height: 0 },
+            title: null,
+            drawerIcon: () => null,
+          }}
+        />
+        {/* drawer link navigation End  */}
 
-        {/* <Drawer.Screen name="Notifications" component={NotificationScreen} /> */}
+        <Drawer.Screen name="Notifications" component={NotificationScreen} />
       </Drawer.Navigator>
     </>
   );
